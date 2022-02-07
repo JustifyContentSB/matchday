@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli Light'), local('Muli-Light'), url('Mulilight.woff2') format('woff2'), url('Mulilight.woff') format('woff'), url('Mulilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli Regular'), local('Muli-Regular'), url('Muliregular.woff2') format('woff2'), url('Muliregular.woff') format('woff'), url('Muliregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli SemiBold'), local('Muli-SemiBold'), url('Mulisemibold.woff2') format('woff2'), url('Mulisemibold.woff') format('woff'), url('Mulisemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli Bold'), local('Muli-Bold'), url('Mulibold.woff2') format('woff2'), url('Mulibold.woff') format('woff'), url('Mulibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli Black'), local('Muli-Black'), url('Muliblack.woff2') format('woff2'), url('Muliblack.woff') format('woff'), url('Muliblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+

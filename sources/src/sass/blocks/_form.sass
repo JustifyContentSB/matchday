@@ -1,0 +1,75 @@
+.form
+   &__inner
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__box
+      width: 100%
+      margin-bottom: 36px
+   &__label
+      display: block
+      margin-bottom: 30px
+   &__name
+      margin-bottom: 10px
+      padding-left: 4px
+      display: block
+      font-weight: 600
+      line-height: 150%
+   &__field
+      width: 100%
+      height: 64px
+      padding: 16px 24px
+      background: transparent
+      border: 4px solid #BBA5EF
+      color: #fff
+      &::placeholder
+         color: #fff
+   &__choose
+      &-box
+         display: flex
+         flex-wrap: wrap
+      &-label
+         width: 50%
+         height: 64px
+         padding-left: 20px
+         display: flex
+         border: 4px solid #BBA5EF
+         justify-content: flex-start
+         &:nth-child(2n)
+            border-left: none
+   &__download
+      margin-bottom: 7px
+      display: flex
+      flex-direction: column
+      align-items: center
+      font-weight: 600
+      cursor: pointer
+      &-input
+         position: absolute
+         width: 1px
+         height: 1px
+         margin: -1px
+         border: 0
+         padding: 0
+         clip: rect(0 0 0 0)
+         overflow: hidden
+      &-icon
+         margin-bottom: 5px
+      &-text
+         font-size: 12px
+         line-height: 150%
+         color: $accent
+         font-weight: 300
+   &__send
+      font-weight: 600
+      font-size: 16px
+      line-height: 150%
+      color: #fff
+
+@media screen and (min-width: 1024px)
+   .form
+      &__name
+         padding-left: 0
+         font-size: 20px
+      &__send
+         font-size: 18px

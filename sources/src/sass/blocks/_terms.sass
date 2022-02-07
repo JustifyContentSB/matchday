@@ -1,0 +1,210 @@
+.terms
+   min-height: 100vh
+   padding-bottom: 112px
+   position: relative
+   .left,
+   .right
+      display: none
+   &__inner
+      margin: 0 auto
+   &__header
+      margin-bottom: 26px
+      padding-top: 50px
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+   &__heart
+      position: absolute
+      &-1
+         left: -10px
+         top: 120px
+      &-2
+         right: 20px
+         top: 0
+      &-3
+         right: 23px
+         bottom: -15px
+      &-4
+         left: 0px
+         bottom: 40px
+      &-5
+         right: -10px
+         bottom: 125px
+      &-6
+         right: 10%
+         bottom: 20px
+      &-red
+         position: absolute
+         bottom: 10px
+         left: 30%
+   &__logo
+      width: 245px
+      margin-bottom: 40px
+      display: inline-block
+      position: relative
+      z-index: 5
+   &__form
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__manage
+      width: 100%
+      max-width: 340px
+      margin: 0 auto
+      margin-bottom: 38px
+      padding-left: 10px
+   &__label
+      margin-bottom: 36px
+      display: flex
+      font-weight: 400
+      font-size: 14px
+      line-height: 150%
+      cursor: pointer
+      &:last-child
+         margin-bottom: 0
+      &-checkbox
+         width: 30px
+         min-width: 30px
+         height: 30px
+         margin-top: 5px
+         margin-right: 28px
+         background: url('../images/icons/check-empty.svg') no-repeat center / contain
+         position: relative
+         &::after
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            background: url('../images/icons/check.svg') no-repeat center / contain
+            opacity: 0
+      input
+         display: none
+         &:checked ~ .terms__label-checkbox
+            background: none
+            &::after
+               opacity: 1
+   &__broken
+      width: 85px
+      margin-bottom: 26px
+   &__text
+      margin-top: 43px
+      margin-bottom: 36px
+      padding: 0 3px
+      font-size: 14px
+      line-height: 150%
+      text-align: center
+      br
+         display: none
+   &__btns
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      .btn
+         margin-bottom: 40px
+   &--match
+      .terms
+         &__header
+            flex-direction: column-reverse
+         &__logo
+            margin-bottom: 0
+         &__heart
+            &-1
+               top: 90px
+            &-3
+               right: -15px
+
+@media screen and (min-width: 768px)
+   .terms
+      &--match
+         .terms
+            &__heart
+               &-3
+                  display: none
+      &__logo
+         width: 388px
+      &__smile
+         width: 83px
+      &__manage
+         max-width: 600px
+      &__label
+         font-size: 16px
+         align-items: center
+         &-checkbox
+            margin-top: 0
+      &__text
+         br
+            display: inline
+
+@media screen and (min-width: 1024px)
+   .terms
+      &__inner
+         max-width: 800px
+         position: relative
+      &__header
+         margin-bottom: 50px
+         padding-top: 96px
+      &__logo
+         width: 588px
+         margin-bottom: 53px
+      &__manage
+         margin-bottom: 60px
+      &__label
+         margin-bottom: 42px
+         &:first-child
+            text-decoration: underline
+      &__heart
+         &-red
+            display: none
+
+@media screen and (min-width: 1365px)
+   .terms
+      overflow: hidden
+      &__broken
+         width: 116px
+         margin-bottom: 50px
+      &__heart
+         display: none
+      &__inner
+         position: relative
+         z-index: 5
+      .left, .right
+         display: block
+      .left
+         left: -260px
+      .right
+         right: -200px
+      &__text
+         max-width: 850px
+         margin: 0 auto
+         margin-bottom: 68px
+         font-size: 16px
+      &__btns
+         max-width: 600px
+         margin: 0 auto
+         flex-direction: row
+         justify-content: center
+         flex-wrap: wrap
+         .btn
+            margin-bottom: 0
+            margin-right: 77px
+            &:nth-child(2n)
+               margin-right: 0
+
+@media screen and (min-width: 1600px)
+   .terms
+      .left
+         left: -140px
+      .right
+         right: -80px
+
+@media screen and (min-width: 1800px)
+   .terms
+      .left
+         left: -52px
+      .right
+         right: 0

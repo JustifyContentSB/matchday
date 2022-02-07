@@ -1,0 +1,59 @@
+extends base/_layout
+block head
+   title Match Day
+block page
+   main.main
+      section.terms
+         .left
+            img.left__cells(src="images/all/left.svg", alt="клетки")
+            img.left__heart.left__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.left__heart.left__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.left__heart.left__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.left__heart.left__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.left__heart.left__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.left__heart.left__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.left__heart.left__heart-7(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.left__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+            img.left__heart-pink(src="images/all/heart-pink.gif", alt="сердечко")
+            img.left__heart-red(src="images/all/heart-pink.gif", alt="сердечко")
+            img.left__smile-green(src="images/all/left-smile-green.svg", alt="смайл" width="101" height="98")
+            img.left__smile-yellow(src="images/all/left-smile-yellow.svg", alt="смайл" width="101" height="98")
+         .right
+            img.right__cells(src="images/all/right.svg", alt="клетки")
+            img.right__heart.right__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.right__heart.right__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.right__heart.right__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.right__heart.right__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.right__heart.right__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.right__heart.right__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.right__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+            img.right__heart-yellow(src="images/all/heart-pink.gif", alt="сердечко")
+            img.right__smile-pink(src="images/all/right-smile-pink.svg", alt="смайл" width="101" height="98")
+            img.right__smile-red(src="images/all/right-smile-red.svg", alt="смайл" width="101" height="98")
+         .terms__inner.container
+            header.terms__header
+               h1.visually-hidden Match Day
+               a.terms__logo(href="#") 
+                  img(src="images/icons/match.svg", alt="match day" width="589" height="76")
+               img.terms__smile(src="images/icons/smile.png", alt="smile" width="73" height="73")
+               img.terms__heart.terms__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+               img.terms__heart.terms__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+               img.terms__heart.terms__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            form.terms__form(action="#")
+               .terms__manage
+                  label.terms__label
+                     input(type="checkbox" name="terms")
+                     span.terms__label-checkbox
+                     span.terms__label-text Я ознакомлен(-а) с политикой обработки и защиты персональных данных
+                  label.terms__label
+                     input(type="checkbox" name="terms")
+                     span.terms__label-checkbox
+                     span.terms__label-text Я согласен(-а) с хранением и обработкой персональных данных
+                  label.terms__label
+                     input(type="checkbox" name="terms")
+                     span.terms__label-checkbox
+                     span.terms__label-text Я согласен(-а) со сбором файлов cookies
+               button.btn
+                  span продолжить
+            img.terms__heart.terms__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+            img.terms__heart.terms__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")

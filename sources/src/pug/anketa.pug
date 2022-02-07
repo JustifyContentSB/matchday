@@ -1,0 +1,180 @@
+extends base/_layout
+block head
+    title Анкета
+block page
+    main.main
+        section.survey
+            .left.survey__left
+                img.left__cells(src="images/all/left.svg", alt="клетки")
+                img.left__heart.left__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.left__heart.left__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.left__heart.left__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.left__heart.left__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.left__heart.left__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.left__heart.left__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.left__heart.left__heart-7(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.left__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                img.left__heart-pink(src="images/all/heart-pink.gif", alt="сердечко")
+                img.left__heart-red(src="images/all/heart-pink.gif", alt="сердечко")
+                img.left__smile-green(src="images/all/left-smile-green.svg", alt="смайл" width="101" height="98")
+                img.left__smile-yellow(src="images/all/left-smile-yellow.svg", alt="смайл" width="101" height="98")
+            .right.survey__right
+                img.right__cells(src="images/all/right.svg", alt="клетки")
+                img.right__heart.right__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.right__heart.right__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.right__heart.right__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.right__heart.right__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.right__heart.right__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.right__heart.right__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                img.right__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                img.right__heart-yellow(src="images/all/heart-pink.gif", alt="сердечко")
+                img.right__smile-pink(src="images/all/right-smile-pink.svg", alt="смайл" width="101" height="98")
+                img.right__smile-red(src="images/all/right-smile-red.svg", alt="смайл" width="101" height="98")
+            .survey__inner.container
+                header.survey__header
+                    img.survey__header-heart.survey__header-heart--1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.survey__header-heart.survey__header-heart--2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.survey__header-heart.survey__header-heart--3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    h1.survey__title
+                        span Ан
+                        span ке
+                        span та
+                form.form.survey__form(action="#")
+                    .form__inner
+                        .form__box
+                            label.form__label
+                                span.form__name Имя
+                                input.form__field(type="text" placeholder="Имя")
+                            label.form__label
+                                span.form__name Фамилия
+                                input.form__field(type="text" placeholder="Фамилия")
+                            .form__choose
+                                span.form__name Пол
+                                .form__choose-box
+                                    label.form__choose-label.radio
+                                        input.radio__input(type="radio" name="gender")
+                                        span.radio__field
+                                        span.radio__text Мужской
+                                    label.form__choose-label.radio
+                                        input.radio__input(type="radio" name="gender")
+                                        span.radio__field
+                                        span.radio__text Женский
+                        label.form__download
+                            input.form__download-input(type="file")
+                            img.form__download-icon(src="images/icons/btn.svg" alt="иконка кнопки")
+                            span.form__download-text Размер файла не более 15 мб
+                        button.form__send Прикрепи своё фото
+                    img.survey__form-heart.survey__form-heart--1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.survey__form-heart.survey__form-heart--2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                form.survey__info(action="#")
+                    h2.survey__offer.title Выбери один из вариантов:
+                    ul.survey__list
+                        li.survey__item
+                            h3.survey__question Что ты любишь больше:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="drinks")
+                                span.radio__field
+                                span.radio__text Чай
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="drinks")
+                                span.radio__field
+                                span.radio__text Кофе
+                        li.survey__item
+                            h3.survey__question К кому ты себя относишь:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="dream")
+                                span.radio__field
+                                span.radio__text К совам
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="dream")
+                                span.radio__field
+                                span.radio__text К жаворонокам
+                        li.survey__item
+                            h3.survey__question Кто сильнее:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="hero")
+                                span.radio__field
+                                span.radio__text Бэтмен
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="hero")
+                                span.radio__field
+                                span.radio__text Супермен
+                        li.survey__item
+                            h3.survey__question Тебе приятнее:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="gift")
+                                span.radio__field
+                                span.radio__text Дарить подарки
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="gift")
+                                span.radio__field
+                                span.radio__text Получать подарки
+                        li.survey__item
+                            h3.survey__question  Корочка от пиццы:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="pizza")
+                                span.radio__field
+                                span.radio__text Дарить подарки
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="pizza")
+                                span.radio__field
+                                span.radio__text Получать подарки
+                        li.survey__item
+                            h3.survey__question  Какой вид отдыха тебе по душе:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="rest")
+                                span.radio__field
+                                span.radio__text Активный
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="rest")
+                                span.radio__field
+                                span.radio__text Спокойный
+                        li.survey__item
+                            h3.survey__question  Легче переносишь:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="weather")
+                                span.radio__field
+                                span.radio__text Жару
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="weather")
+                                span.radio__field
+                                span.radio__text Холод
+                        li.survey__item
+                            h3.survey__question  Больше любишь:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="like")
+                                span.radio__field
+                                span.radio__text Фильмы
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="like")
+                                span.radio__field
+                                span.radio__text Мультики
+                        li.survey__item
+                            h3.survey__question  Тебе больше нравится:
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="food")
+                                span.radio__field
+                                span.radio__text Сладкое
+                            label.survey__label.radio
+                                input.radio__input(type="radio" name="food")
+                                span.radio__field
+                                span.radio__text Солёное
+                    button.btn
+                        span отправить
+                    img.survey__info-heart.survey__info-heart--1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.survey__info-heart.survey__info-heart--2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.survey__info-pink(src="images/all/heart-pink.gif", alt="сердечко")
+                    .right.survey__bottom
+                        img.right__cells(src="images/all/right.svg", alt="клетки")
+                        img.right__heart.right__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.right__heart.right__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.right__heart.right__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.right__heart.right__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.right__heart.right__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.right__heart.right__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.right__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                        img.right__heart-yellow(src="images/all/heart-pink.gif", alt="сердечко")
+                        img.right__smile-pink(src="images/all/right-smile-pink.svg", alt="смайл" width="101" height="98")
+                        img.right__smile-red(src="images/all/right-smile-red.svg", alt="смайл" width="101" height="98")
+
+

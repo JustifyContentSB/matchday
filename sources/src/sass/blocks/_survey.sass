@@ -1,0 +1,254 @@
+.survey
+   overflow: hidden
+   &__right,
+   &__left,
+   &__bottom
+      display: none
+   &__left
+      .left
+         &__heart
+            &-1
+               top: 140px
+               right: 194px
+            &-2
+               right: 314px
+            &-4
+               top: 613px
+               right: 136px
+            &-5
+               top: 555px
+               right: 16px
+            &-7
+               top: 498px
+   &__right
+      .right
+         &__heart
+            &-2
+               top: 242px
+            &-3
+               top: 422px
+               left: 193px
+            &-6
+               left: 194px
+               top: 599px
+   &__bottom
+      right: -37px
+      height: 259px
+      .right
+         &__heart
+            &-yellow
+               display: none
+   &__header
+      padding-top: 30px
+      position: relative
+      &-heart
+         position: absolute
+         &--1
+            left: 3px
+            top: 30px
+         &--2
+            right: 54px
+            top: -10px
+         &--3
+            right: 0
+            bottom: -33px
+   &__title
+      margin-bottom: 32px
+      font-size: 48px
+      line-height: 56px
+      color: #43FE01
+      font-family: $pixelcyr
+      font-weight: 400
+      text-align: center
+      text-shadow: #000 3px 0px 0, #000 0px 3px 2px, #000 0px -2px 2px, #000 -2px 0px 2px
+      span
+         &:nth-child(2)
+            color: #FFFF00
+         &:nth-child(3)
+            color: #FE75F0
+   &__form
+      margin-bottom: 64px
+      position: relative
+      &-heart
+         position: absolute
+         &--1
+            bottom: 0
+            left: 0
+         &--2
+            bottom: -40px
+            right: 0
+   &__info
+      padding-bottom: 130px
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-heart
+         position: absolute
+         &--1
+            bottom: 33px
+            left: -6px
+         &--2
+            bottom: 70px
+            right: 0
+      &-pink
+         position: absolute
+         bottom: 10px
+         left: 21%
+   &__offer
+      margin-bottom: 38px
+   &__list
+      width: 100%
+   &__item
+      margin-bottom: 46px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      position: relative
+      z-index: 5
+   &__question
+      margin-bottom: 17px
+      padding-left: 3px
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+   &__label
+      margin-bottom: 26px
+      padding-left: 10px
+      font-size: 14px
+      .radio
+         &__field
+            margin-right: 17px
+      &:last-child
+         margin-bottom: 0
+
+@media screen and (min-width: 1024px)
+   .survey
+      &__header
+         width: 100%
+         max-width: 955px
+         margin: 0 auto
+         padding-top: 60px
+      &__title
+         margin-bottom: 40px
+         font-size: 96px
+         line-height: 120%
+         text-shadow: #000 4px 0px 0, #000 0px 4px 2px, #000 0px -4px 2px, #000 -4px 0px 2px
+         -webkit-text-stroke: 1px #000
+      &__form
+         margin-bottom: 82px
+         .form
+            width: 100%
+            max-width: 955px
+            &__box
+               width: 100%
+               max-width: 955px
+               margin: 0 auto
+               margin-bottom: 40px
+               display: grid
+               grid-template-columns: 1fr 1fr 1fr
+               grid-gap: 30px
+            &__label
+               margin: 0
+      &__list
+         width: 100%
+         max-width: 1290px
+         margin: 0 auto
+         margin-bottom: 55px
+         display: grid
+         grid-template-columns: 1fr 1fr 1fr
+         grid-gap: 83px 0px
+      &__item
+         margin: 0
+      &__question
+         margin-bottom: 20px
+         padding-left: 0
+         font-size: 20px
+      &__label
+         margin-bottom: 16px
+         padding-left: 0
+         font-size: 16px
+         .radio
+            &__field
+               margin-right: 11px
+      &__info
+         padding: 0 20px
+         padding-bottom: 60px
+
+@media screen and (min-width: 1365px)
+   .survey
+      &__info
+         &-heart
+            &--2
+               display: none
+      &__left
+         display: block
+         top: -200px
+         left: -300px
+      &__right
+         width: 260px
+         display: block
+         top: -125px
+         right: 0
+         height: 724px
+         .right
+            &__smile
+               &-red
+                  display: none
+      &__bottom
+         width: 370px
+         position: absolute
+         display: block
+         bottom: 0
+      &__header
+         &-heart
+            &--2, &--3
+               display: none
+      &__form
+         width: 100%
+         max-width: 955px
+         margin: 0 auto
+         margin-bottom: 82px
+         &-heart
+            &--1, &--2
+               display: none
+      &__info
+         padding: 0
+         padding-bottom: 60px
+
+@media screen and (min-width: 1600px)
+   .survey
+      position: relative
+      &__left
+         top: -200px
+         left: -250px
+      &__right
+         width: 550px
+         top: -120px
+         right: -180px
+      &__bottom
+         width: 418px
+         display: block
+      &__header
+         &-heart
+            display: none
+      &__info
+         &-heart, &-pink
+            display: none
+      &__form
+         &-heart
+            display: none
+      &__list
+         grid-gap: 83px 30px
+
+@media screen and (min-width: 1900px)
+   .survey
+      &__left
+         left: -122px
+         top: -160px
+      &__right
+         height: 658px
+         top: -135px
+         right: -54px
+      &__bottom
+         width: 518px

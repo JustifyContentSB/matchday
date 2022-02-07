@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Анкета</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <main class="main">
+      <section class="survey">
+        <div class="left survey__left"><img class="left__cells" src="images/all/left.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
+        <div class="right survey__right"><img class="right__cells" src="images/all/right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
+        <div class="survey__inner container">
+          <header class="survey__header"><img class="survey__header-heart survey__header-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__header-heart survey__header-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__header-heart survey__header-heart--3" src="images/all/heart.gif" alt="сердечко" width="50" height="50">
+            <h1 class="survey__title"><span>Ан</span><span>ке</span><span>та</span></h1>
+          </header>
+          <form class="form survey__form" action="#">
+            <div class="form__inner">
+              <div class="form__box">
+                <label class="form__label"><span class="form__name">Имя</span>
+                  <input class="form__field" type="text" placeholder="Имя">
+                </label>
+                <label class="form__label"><span class="form__name">Фамилия</span>
+                  <input class="form__field" type="text" placeholder="Фамилия">
+                </label>
+                <div class="form__choose"><span class="form__name">Пол</span>
+                  <div class="form__choose-box">
+                    <label class="form__choose-label radio">
+                      <input class="radio__input" type="radio" name="gender"><span class="radio__field"></span><span class="radio__text">Мужской</span>
+                    </label>
+                    <label class="form__choose-label radio">
+                      <input class="radio__input" type="radio" name="gender"><span class="radio__field"></span><span class="radio__text">Женский</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <label class="form__download">
+                <input class="form__download-input" type="file"><img class="form__download-icon" src="images/icons/btn.svg" alt="иконка кнопки"><span class="form__download-text">Размер файла не более 15 мб</span>
+              </label>
+              <button class="form__send">Прикрепи своё фото</button>
+            </div><img class="survey__form-heart survey__form-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__form-heart survey__form-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50">
+          </form>
+          <form class="survey__info" action="#">
+            <h2 class="survey__offer title">Выбери один из вариантов:</h2>
+            <ul class="survey__list">
+              <li class="survey__item">
+                <h3 class="survey__question">Что ты любишь больше:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="drinks"><span class="radio__field"></span><span class="radio__text">Чай</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="drinks"><span class="radio__field"></span><span class="radio__text">Кофе</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question">К кому ты себя относишь:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="dream"><span class="radio__field"></span><span class="radio__text">К совам</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="dream"><span class="radio__field"></span><span class="radio__text">К жаворонокам</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question">Кто сильнее:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="hero"><span class="radio__field"></span><span class="radio__text">Бэтмен</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="hero"><span class="radio__field"></span><span class="radio__text">Супермен</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question">Тебе приятнее:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="gift"><span class="radio__field"></span><span class="radio__text">Дарить подарки</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="gift"><span class="radio__field"></span><span class="radio__text">Получать подарки</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question"> Корочка от пиццы:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="pizza"><span class="radio__field"></span><span class="radio__text">Дарить подарки</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="pizza"><span class="radio__field"></span><span class="radio__text">Получать подарки</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question"> Какой вид отдыха тебе по душе:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="rest"><span class="radio__field"></span><span class="radio__text">Активный</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="rest"><span class="radio__field"></span><span class="radio__text">Спокойный</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question"> Легче переносишь:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="weather"><span class="radio__field"></span><span class="radio__text">Жару</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="weather"><span class="radio__field"></span><span class="radio__text">Холод</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question"> Больше любишь:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="like"><span class="radio__field"></span><span class="radio__text">Фильмы</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="like"><span class="radio__field"></span><span class="radio__text">Мультики</span>
+                </label>
+              </li>
+              <li class="survey__item">
+                <h3 class="survey__question"> Тебе больше нравится:</h3>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="food"><span class="radio__field"></span><span class="radio__text">Сладкое</span>
+                </label>
+                <label class="survey__label radio">
+                  <input class="radio__input" type="radio" name="food"><span class="radio__field"></span><span class="radio__text">Солёное</span>
+                </label>
+              </li>
+            </ul>
+            <button class="btn"><span>отправить</span></button><img class="survey__info-heart survey__info-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__info-heart survey__info-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__info-pink" src="images/all/heart-pink.gif" alt="сердечко">
+            <div class="right survey__bottom"><img class="right__cells" src="images/all/right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="modal diary" style="display: none">
+      <div class="modal__inner diary__inner"><img class="diary__icon" src="images/icons/point.svg" alt="!">
+        <p class="diary__text">Анкета – как первая любовь, случается с тобой только однажды. Эту анкету можно заполнить только сейчас. <br> Подумай хорошенько.  Второго шанса не будет :(</p>
+        <div class="diary__btns"><a class="btn btn--yellow" href="#"><span>пропустить</span></a><a class="btn" href="#"><span>заполнить анкету</span></a></div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

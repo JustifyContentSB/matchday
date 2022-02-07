@@ -1,0 +1,195 @@
+.radio
+   display: flex
+   align-items: center
+   cursor: pointer
+   &__field
+      display: inline-block
+      margin-right: 10px
+      width: 22px
+      height: 22px
+      background: url('../images/icons/radio.svg') no-repeat center / contain
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         left: 50%
+         top: 50%
+         transform: translate(-50%, -50%) scale(0.6)
+         width: 6px
+         height: 6px
+         background: #fff
+         opacity: 0
+         transition: transform .2s ease
+   &__input
+      position: absolute
+      width: 1px
+      height: 1px
+      margin: -1px
+      border: 0
+      padding: 0
+      clip: rect(0 0 0 0)
+      overflow: hidden
+      &:checked
+         & ~ .radio__field::after
+            opacity: 1
+            transform: translate(-50%, -50%) scale(1)
+
+.title
+   font-family: $pixelcyr
+   text-align: center
+   font-size: 22px
+   line-height: 150%
+   font-weight: 400
+
+.btn
+   min-width: 183px
+   min-height: 43px
+   display: inline-flex
+   justify-content: center
+   align-items: center
+   font-size: 14px
+   color: #000
+   text-transform: uppercase
+   font-family: $pixelcyr
+   font-weight: 400
+   background: url('../images/icons/button.png') no-repeat center / 100% 100%
+   position: relative
+   &::after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      z-index: -1
+      left: 0
+      background: url('../images/icons/button-hover.png') no-repeat center / 100% 100%
+   span
+      position: relative
+      z-index: 5
+   &:hover,
+   &:focus
+      &::after
+         z-index: 1
+   &--yellow
+      background: url('../images/icons/button-yellow.png') no-repeat center / 100% 100%
+
+.left
+   display: block
+   width: 626px
+   position: absolute
+   left: -52px
+   top: -48px
+   overflow: hidden
+   &__cells
+      max-width: none
+   &__heart
+      position: absolute
+      right: 0
+      top: 0
+      &-1
+         top: 80px
+         right: 254px
+      &-2
+         top: 260px
+         right: 194px
+      &-3
+         top: 200px
+         right: 432px
+      &-4
+         top: 676px
+         right: 74px
+      &-5
+         top: 560px
+         right: 194px
+      &-6
+         top: 614px
+         right: 430px
+      &-7
+         top: 440px
+         right: 370px
+      &-green, &-pink, &-red
+         position: absolute
+         right: 0
+         bottom: 0
+      &-pink
+         right: 253px
+         bottom: 30px
+      &-green
+         bottom: auto
+         top: 30px
+         right: 310px
+      &-red
+         right: auto
+         left: 0
+         bottom: 430px
+   &__smile
+      &-green, &-yellow
+         position: absolute
+         right: 0
+         bottom: 0
+      &-yellow
+         right: auto
+         left: 46px
+         bottom: 210px
+      &-green
+         bottom: 275px
+         right: 200px
+
+.right
+   width: 534px
+   height: 648px
+   position: absolute
+   right: 0
+   bottom: 0
+   overflow: hidden
+   &__cells
+      max-width: none
+   &__heart
+      position: absolute
+      top: 0
+      left: 0
+      &-1
+         top: 5px
+         left: 432px
+      &-2
+         top: 182px
+         left: 254px
+      &-3
+         top: 300px
+         left: 74px
+      &-4
+         top: 360px
+         left: 431px
+      &-5
+         top: 480px
+         left: 310px
+      &-6
+         top: 594px
+         left: 134px
+      &-green, &-yellow
+         position: absolute
+         top: 0
+         left: 0
+      &-green
+         top: 60px
+         left: 60px
+      &-yellow
+         top: auto
+         bottom: 10px
+         left: 14px
+   &__smile
+      &-pink
+         position: absolute
+         top: 310px
+         left: 134px
+      &-red
+         position: absolute
+         top: 70px
+         right: 55px
+      
+@media screen and (min-width: 1024px)
+   .btn
+      min-width: 223px
+      min-height: 57px
+      font-size: 18px
+   .title
+      font-size: 48px

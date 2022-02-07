@@ -1,0 +1,66 @@
+.modal
+   max-height: 90vh
+   position: fixed
+   left: 50%
+   top: 50%
+   transform: translate(-50%, -50%)
+   z-index: 100
+   background: $bodyBg
+   border: 3px solid #000
+   border-radius: 20px
+   overflow-y: auto
+   &__inner
+      position: relative
+      z-index: 5
+      border: 3px solid #BBA5EF
+      border-radius: 20px
+      border-bottom-color: #663EC6
+      border-right-color: #663EC6
+
+.diary
+   width: 100%
+   max-width: 280px
+   &__inner
+      padding: 32px 36px 68px
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__icon
+      margin-bottom: 46px
+   &__text
+      width: 100%
+      margin-bottom: 36px
+      font-weight: 600
+      font-size: 14px
+      line-height: 150%
+      text-align: center
+   &__btns
+      display: flex
+      flex-direction: column
+      align-items: center
+      .btn
+         margin-bottom: 38px
+         &:last-child
+            margin-bottom: 0
+
+@media screen and (min-width: 900px)
+   .diary
+      max-width: 816px
+      &__inner
+         padding-top: 47px
+         padding-bottom: 57px
+      &__icon
+         margin-bottom: 26px
+      &__text
+         max-width: 500px
+         margin: 0 auto
+         margin-bottom: 47px
+         font-size: 17px
+      &__btns
+         flex-direction: row
+         flex-wrap: wrap
+         .btn
+            margin: 0
+            margin-right: 77px
+            &:nth-child(2n)
+               margin-right: 0
