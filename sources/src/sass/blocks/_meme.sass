@@ -1,0 +1,249 @@
+.meme
+   margin-bottom: 20px
+   &__left
+      display: none
+   &__top
+      margin-bottom: 30px
+      padding-top: 90px
+      position: relative
+      &-heart
+         position: absolute
+         &__1
+            left: 0
+            top: 50px
+         &__2
+            right: 10px
+            top: 0
+         &__pink
+            position: absolute
+            top: 0
+            left: 20%
+   &__title
+      margin-bottom: 16px
+      display: flex
+      align-items: center
+      justify-content: center
+      span
+         margin-right: 12px
+   &__text
+      text-align: center
+   &__form
+      margin-bottom: 40px
+      position: relative
+      &-heart
+         position: absolute
+         &--1
+            bottom: 0
+            left: 0
+         &--2
+            right: 0
+            bottom: 40px
+      .form
+         &__box
+            margin-bottom: 18px
+         &__label
+            &:last-child
+               margin-bottom: 0
+         &__download
+            margin-bottom: 27px
+   &__slider
+      position: relative
+      padding-left: 59px
+      &-container
+         overflow: hidden
+   &__prev
+      display: none
+   &__next
+      right: auto
+      left: 14px
+   &__item
+      width: 234px
+   &__content
+      min-height: 160px
+      padding: 6px
+      background: url('../images/meme/meme-bg.svg') no-repeat center / 100% 100%
+      position: relative
+   &__photo
+      width: 100%
+      height: auto
+   &__loop
+      height: 38px
+      padding: 8px
+      padding-right: 12px
+      position: absolute
+      bottom: 6px
+      left: 6px
+      right: 0
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 137.5%)
+   &__info
+      padding-top: 13px
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__author
+      font-size: 14px
+      line-height: 150%
+      word-spacing: 9999px
+   &__like
+      min-width: 100px
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      &-num
+         margin-right: 16px
+         font-size: 30px
+         line-height: 80%
+         color: $accent
+         font-family: $opirus
+
+@media screen and (min-width: 768px)
+   .meme
+      &__form
+         .form
+            &__box
+               margin-bottom: 25px
+               display: flex
+               justify-content: space-between
+            &__label
+               width: calc(50% - 10px)
+               margin-bottom: 0
+
+@media screen and (min-width: 1024px)
+   .meme
+      &__next
+         left: 6px
+      &__author
+         font-size: 16px
+      &__like
+         &-num
+            margin-bottom: -6px
+            font-size: 36px
+      &__info
+         padding-left: 10px
+      &__title
+         margin-bottom: 20px
+         span
+            margin-right: 24px
+         img
+            width: 60px
+      &__form
+         .form
+            &__download
+               &-top
+                  margin-bottom: 6px
+                  justify-content: flex-start
+               &-icon
+                  margin-bottom: 0
+                  margin-right: 16px
+               &-bottom
+                  min-width: 298px
+                  padding: 10px 16px
+                  display: flex
+                  flex-direction: column
+                  align-items: center
+                  background: url('../images/meme/line.png') no-repeat center / 100% 100%
+               &-here
+                  margin-bottom: 2px
+                  display: block
+                  font-size: 16px
+                  line-height: 150%
+               &-meme
+                  font-size: 20px
+                  line-height: 150%
+                  font-weight: 600
+
+@media screen and (min-width: 1280px)
+   .meme
+      &__slider
+         max-width: 1312px
+         margin: 0 auto
+         padding: 0 16px
+         &-container
+            width: 1060px
+            margin: 0 auto
+      &__form
+         margin-bottom: 50px
+         .form
+            &__top
+               margin-bottom: 34px
+               flex-direction: row
+            &__box
+               padding-top: 6px
+               margin: 0
+            &__download
+               margin: 0
+               margin-left: 30px
+            &__label
+               width: calc(50% - 15px)
+      &__prev
+         display: block
+         top: 38%
+         left: 16px
+      &__next
+         top: 38%
+         left: auto
+         right: 16px
+
+@media screen and (min-width: 1365px)
+   .meme
+      &__top
+         width: 952px
+         margin-bottom: 50px
+         padding-top: 98px
+      &__title
+         img
+            width: 76px
+      &__form
+         margin-bottom: 60px
+         .form
+            &__box
+               max-width: 630px
+            &__top
+               width: 1000px
+               margin-bottom: 40px
+
+@media screen and (min-width: 1600px)
+   .meme
+      position: relative
+      &__form
+         &-heart
+            &--1
+               display: none
+      &__left
+         display: block
+         width: 324px
+         top: auto
+         bottom: -174px
+         left: -100px
+         .left
+            &__smile
+               &-yellow
+                  left: 153px
+                  bottom: 333px
+               &-green
+                  bottom: 522px
+                  right: 237px
+            &__heart
+               &-green
+                  display: none
+               &-red
+                  left: 217px
+                  bottom: 575px
+               &-1
+                  right: 250px
+               &-2
+                  right: 10px
+               &-4
+                  top: 614px
+                  right: 71px
+               &-5
+                  top: 495px
+                  right: 129px
+
+@media screen and (min-width: 1900px)
+   .meme
+      &__left
+         left: -12px

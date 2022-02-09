@@ -3,6 +3,7 @@
 @import "./mixins"
 @import "./fonts"
 @import "./sprite_generated"
+@import "../../node_modules/swiper/swiper-bundle.min.css"
 
 // From libs:
 //@import "../libs/LIB_NAME/path/to/style.scss"
@@ -31,6 +32,8 @@ body
     min-height: 100vh
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
+    &.no-scroll
+        overflow: hidden
 
 .visually-hidden:not(:focus):not(:active) 
     position: absolute
@@ -102,11 +105,11 @@ picture
 
 .container
     width: 100%
-    max-width: 100%
+    max-width: 1440px
     margin: 0 auto
     padding: 0 16px
 
 .wrapper
     width: 100%
-    max-width: 100%
+    max-width: 1900px
     margin: 0 auto

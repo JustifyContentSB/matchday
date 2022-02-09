@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Анкета</title>
+    <title>Главная</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,131 +23,460 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <main class="main">
-      <section class="survey">
-        <div class="left survey__left"><img class="left__cells" src="images/all/left.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
-        <div class="right survey__right"><img class="right__cells" src="images/all/right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
-        <div class="survey__inner container">
-          <header class="survey__header"><img class="survey__header-heart survey__header-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__header-heart survey__header-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__header-heart survey__header-heart--3" src="images/all/heart.gif" alt="сердечко" width="50" height="50">
-            <h1 class="survey__title"><span>Ан</span><span>ке</span><span>та</span></h1>
-          </header>
-          <form class="form survey__form" action="#">
-            <div class="form__inner">
-              <div class="form__box">
-                <label class="form__label"><span class="form__name">Имя</span>
-                  <input class="form__field" type="text" placeholder="Имя">
-                </label>
-                <label class="form__label"><span class="form__name">Фамилия</span>
-                  <input class="form__field" type="text" placeholder="Фамилия">
-                </label>
-                <div class="form__choose"><span class="form__name">Пол</span>
-                  <div class="form__choose-box">
-                    <label class="form__choose-label radio">
-                      <input class="radio__input" type="radio" name="gender"><span class="radio__field"></span><span class="radio__text">Мужской</span>
-                    </label>
-                    <label class="form__choose-label radio">
-                      <input class="radio__input" type="radio" name="gender"><span class="radio__field"></span><span class="radio__text">Женский</span>
-                    </label>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner container"><a class="header__burger" href="#"><img src="images/icons/burger.svg" alt="открыть меню" width="28" height="24"></a>
+          <nav class="header__nav"><a class="header__nav-close" href="#"><img src="images/icons/close.svg" alt="закрыть меню"></a>
+            <ul class="header__list">
+              <li class="header__item header__item--active"><a class="header__link" href="#">главная</a></li>
+              <li class="header__item"><a class="header__link" href="#">MATCH TIME</a></li>
+              <li class="header__item"><a class="header__link" href="#">ЛЕКЦИИ</a></li>
+              <li class="header__item"><a class="header__link" href="#">ЧАТ</a></li>
+              <li class="header__item"><a class="header__link" href="#">МЕМЫ</a></li>
+              <li class="header__item"><a class="header__link" href="#">ГОРОСКОП</a></li>
+              <li class="header__item"><a class="header__link" href="#">что подарить?</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="greeting">
+          <div class="greeting__inner">
+            <div class="greeting__top container">
+              <div class="greeting__logo"><img class="greeting__logo-img" src="images/greeting/match-mob.svg" alt="match day" width="298" height="106"><img class="greeting__logo-smile greeting__logo-smile--1" src="images/all/left-smile-green.svg" alt="смайлик" width="58"><img class="greeting__logo-smile greeting__logo-smile--2" src="images/all/right-smile-yellow.svg" alt="смайлик" width="58"></div>
+            </div>
+            <p class="greeting__text">Привет! <br>
+              С Днём любви, валентинок 
+              и Raffaello. <br>
+              Но помните, что только вы сами можете по-настоящему донести свои чувства до близких :3 <br>
+              Здесь вы найдёте не только много весёлого и полезного, но ещё и идеальную пару.
+            </p>
+            <div class="greeting__bg"><img class="greeting__cells greeting__cells--mob" src="images/greeting/greeting-cells.svg" alt="клеточки" width="1321" height="738"><img class="greeting__cells greeting__cells--desk" src="images/greeting/greeting-cells-desk.svg" alt="клеточки" width="2533" height="1406">
+              <div class="greeting__hearts"><img class="greeting__heart greeting__heart--1" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--2" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--3" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--4" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--5" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--6" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--7" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--tablet greeting__heart--8" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--tablet greeting__heart--9" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--tablet greeting__heart--10" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--tablet greeting__heart--11" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--tablet greeting__heart--12" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--tablet greeting__heart--13" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--tablet greeting__heart--14" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--desk greeting__heart--15" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--desk greeting__heart--16" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--desk greeting__heart--17" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart greeting__heart--desk greeting__heart--18" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="greeting__heart-pink greeting__heart-pink--big greeting__heart-pink--1" src="images/all/heart-pink.gif" alt="сердечко" width="68"><img class="greeting__heart-pink greeting__heart-pink--tablet greeting__heart-pink--2" src="images/all/heart-green.gif" alt="сердечко" width="68"><img class="greeting__heart-pink greeting__heart-pink--tablet greeting__heart-pink--3" src="images/all/heart-green.gif" alt="сердечко" width="68"><img class="greeting__heart-pink greeting__heart-pink--big greeting__heart-pink--desk greeting__heart-pink--4" src="images/all/heart-green.gif" alt="сердечко" width="68"><img class="greeting__heart-pink greeting__heart-pink--big greeting__heart-pink--desk greeting__heart-pink--5" src="images/all/heart-pink.gif" alt="сердечко" width="68"></div>
+            </div>
+          </div>
+        </section>
+        <section class="match">
+          <div class="left match__left"><img class="left__cells" src="images/all/left.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
+          <div class="right match__right"><img class="right__cells" src="images/all/right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
+          <div class="match__inner container">
+            <header class="match__header">
+              <div class="match__top"><img class="match__top-heart match__top-heart--1" src="images/all/heart.gif" alt="сердечко"><img class="match__top-heart match__top-heart--2" src="images/all/heart.gif" alt="сердечко"><img class="match__top-archer" src="images/match/archer.png" alt="стрела" width="219" height="207">
+                <h2 class="title-big match__title">MATCH TIME</h2>
+                <p class="match__text text">Здесь ты увидишь пары, у которых анкеты совпали на 80% и больше! <br class="match__text-br"> Следи за таймером, он подскажет, когда пройдет Match Time. <br>
+                  Если увидишь свою анкету, следуй шагам ниже.
+                </p>
+              </div>
+              <div class="match__timer timer"><img class="timer__bg" src="images/timer/timer.svg" alt="таймер" width="277" height="149">
+                <div class="timer__list">
+                  <div class="timer__bl">
+                    <p class="timer__num timer__hours">16</p><span class="timer__separator"></span>
+                  </div>
+                  <div class="timer__bl">
+                    <p class="timer__num timer__minutes">08</p><span class="timer__separator"></span>
+                  </div>
+                  <div class="timer__bl">
+                    <p class="timer__num timer__seconds">00</p>
                   </div>
                 </div>
               </div>
-              <label class="form__download">
-                <input class="form__download-input" type="file"><img class="form__download-icon" src="images/icons/btn.svg" alt="иконка кнопки"><span class="form__download-text">Размер файла не более 15 мб</span>
-              </label>
-              <button class="form__send">Прикрепи своё фото</button>
-            </div><img class="survey__form-heart survey__form-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__form-heart survey__form-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50">
-          </form>
-          <form class="survey__info" action="#">
-            <h2 class="survey__offer title">Выбери один из вариантов:</h2>
-            <ul class="survey__list">
-              <li class="survey__item">
-                <h3 class="survey__question">Что ты любишь больше:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="drinks"><span class="radio__field"></span><span class="radio__text">Чай</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="drinks"><span class="radio__field"></span><span class="radio__text">Кофе</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question">К кому ты себя относишь:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="dream"><span class="radio__field"></span><span class="radio__text">К совам</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="dream"><span class="radio__field"></span><span class="radio__text">К жаворонокам</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question">Кто сильнее:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="hero"><span class="radio__field"></span><span class="radio__text">Бэтмен</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="hero"><span class="radio__field"></span><span class="radio__text">Супермен</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question">Тебе приятнее:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="gift"><span class="radio__field"></span><span class="radio__text">Дарить подарки</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="gift"><span class="radio__field"></span><span class="radio__text">Получать подарки</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question"> Корочка от пиццы:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="pizza"><span class="radio__field"></span><span class="radio__text">Дарить подарки</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="pizza"><span class="radio__field"></span><span class="radio__text">Получать подарки</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question"> Какой вид отдыха тебе по душе:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="rest"><span class="radio__field"></span><span class="radio__text">Активный</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="rest"><span class="radio__field"></span><span class="radio__text">Спокойный</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question"> Легче переносишь:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="weather"><span class="radio__field"></span><span class="radio__text">Жару</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="weather"><span class="radio__field"></span><span class="radio__text">Холод</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question"> Больше любишь:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="like"><span class="radio__field"></span><span class="radio__text">Фильмы</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="like"><span class="radio__field"></span><span class="radio__text">Мультики</span>
-                </label>
-              </li>
-              <li class="survey__item">
-                <h3 class="survey__question"> Тебе больше нравится:</h3>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="food"><span class="radio__field"></span><span class="radio__text">Сладкое</span>
-                </label>
-                <label class="survey__label radio">
-                  <input class="radio__input" type="radio" name="food"><span class="radio__field"></span><span class="radio__text">Солёное</span>
-                </label>
-              </li>
+            </header>
+            <div class="match__content">
+              <div class="match__event">
+                <p class="match__percent">91%</p>
+                <div class="match__slider">
+                  <div class="match__slider-container swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="match__item swiper-slide">
+                        <div class="match__person">
+                          <div class="match__info">
+                            <div class="match__photo"><img src="images/match/person-1.png" alt="фото"></div>
+                            <p class="match__name">Александр Иванов</p>
+                          </div><a class="match__read" href="#"><span>читать анкету</span></a>
+                        </div>
+                        <div class="match__person"><img class="match__person-heart match__person-heart--mob" src="images/match/broken-mob.png" alt="сердечко" width="56"><img class="match__person-heart match__person-heart--desk" src="images/match/broken-desk.png" alt="сердечко" width="127" height="106">
+                          <div class="match__info">
+                            <div class="match__photo"><img src="images/match/person-2.png" alt="фото"></div>
+                            <p class="match__name">Мария Петрова</p>
+                          </div><a class="match__read" href="#"><span>читать анкету</span></a>
+                        </div>
+                      </div>
+                      <div class="match__item swiper-slide">
+                        <div class="match__person">
+                          <div class="match__info">
+                            <div class="match__photo"><img src="images/match/person-1.png" alt="фото"></div>
+                            <p class="match__name">Александр Иванов</p>
+                          </div><a class="match__read" href="#"><span>читать анкету</span></a>
+                        </div>
+                        <div class="match__person"><img class="match__person-heart match__person-heart--mob" src="images/match/broken-mob.png" alt="сердечко" width="56"><img class="match__person-heart match__person-heart--desk" src="images/match/broken-desk.png" alt="сердечко" width="127" height="106">
+                          <div class="match__info">
+                            <div class="match__photo"><img src="images/match/person-2.png" alt="фото"></div>
+                            <p class="match__name">Мария Петрова</p>
+                          </div><a class="match__read" href="#"><span>читать анкету</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="swiper-button-prev match__prev"></button>
+                  <button class="swiper-button-next match__next"></button>
+                </div>
+                <div class="match__have"><img class="match__have-arrow match__have-arrow--mob" src="images/match/arrow-down.svg" alt="стрелочка" width="30" height="37"><img class="match__have-arrow match__have-arrow--desk" src="images/icons/arrow-right.svg" alt="стрелочка" width="65" height="30"><a class="match__have-link btn" href="#"><span>Есть MATCH</span></a></div><img class="match__heart match__heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="match__heart match__heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="match__heart match__heart--3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="match__heart match__heart--4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="match__heart-green" src="images/all/heart-green.gif" alt="сердечко" width="68">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lecture">
+          <div class="lecture__inner">
+            <header class="lecture__header container">
+              <h2 class="lecture__title title-big">лекции</h2>
+              <p class="lecture__text text">Забегай в Wellness Room, чтобы послушать спикеров и задать вопросы лично. <br>
+                Или подключайся к прямой трансляции в указанное время. <br class="lecture__text-br">
+                Не успеваешь? Не страшно! Мы сохраним для тебя запись с выступления здесь.
+              </p><img class="lecture__heart lecture__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50">
+            </header>
+            <div class="lecture__slider">
+              <div class="lecture__slider-container swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="lecture__item swiper-slide">
+                    <div class="lecture__video">
+                      <div class="lecture__video-inner">
+                        <div class="lecture__video-top"><span class="lecture__video-icon"><img src="images/lecture/lecture-icon-1.svg" alt="иконка" width="14" height="14"></span><span class="lecture__video-icon"><img src="images/lecture/lecture-icon-2.svg" alt="иконка" width="14" height="14"></span></div>
+                        <div class="lecture__video-content"><img src="images/lecture/lecture-1.jpg" alt="превью">
+                          <button class="lecture__video-play"><img src="images/lecture/play.svg" alt="play" width="45"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lecture__info">
+                      <h3 class="lecture__about">Здоровые отношения, построение коммуникации в паре</h3>
+                      <p class="lecture__author">Екатерина Вишневская</p>
+                      <div class="lecture__time">12:10 – 12:55</div>
+                    </div>
+                  </div>
+                  <div class="lecture__item swiper-slide">
+                    <div class="lecture__video">
+                      <div class="lecture__video-inner">
+                        <div class="lecture__video-top"><span class="lecture__video-icon"><img src="images/lecture/lecture-icon-1.svg" alt="иконка" width="14" height="14"></span><span class="lecture__video-icon"><img src="images/lecture/lecture-icon-2.svg" alt="иконка" width="14" height="14"></span></div>
+                        <div class="lecture__video-content"><img src="images/lecture/lecture-2.jpg" alt="превью">
+                          <button class="lecture__video-play"><img src="images/lecture/play.svg" alt="play" width="45"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lecture__info">
+                      <h3 class="lecture__about">Прекрасные истории любви</h3>
+                      <p class="lecture__author">Никита Монич</p>
+                      <div class="lecture__time">14:10 – 14:55</div>
+                    </div>
+                  </div>
+                  <div class="lecture__item swiper-slide">
+                    <div class="lecture__video">
+                      <div class="lecture__video-inner">
+                        <div class="lecture__video-top"><span class="lecture__video-icon"><img src="images/lecture/lecture-icon-1.svg" alt="иконка" width="14" height="14"></span><span class="lecture__video-icon"><img src="images/lecture/lecture-icon-2.svg" alt="иконка" width="14" height="14"></span></div>
+                        <div class="lecture__video-content"><img src="images/lecture/lecture-3.jpg" alt="превью">
+                          <button class="lecture__video-play"><img src="images/lecture/play.svg" alt="play" width="45"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lecture__info">
+                      <h3 class="lecture__about">Мифы о сексе</h3>
+                      <p class="lecture__author">Зоя Пришивалко</p>
+                      <div class="lecture__time">15:15 – 16:00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="lecture__next swiper-button-next"></button>
+            </div>
+          </div>
+        </section>
+        <section class="chat">
+          <div class="left chat__left"><img class="left__cells" src="images/all/left.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
+          <div class="right chat__right"><img class="right__cells" src="images/all/chat-right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
+          <div class="chat__inner container">
+            <div class="chat__top"><img class="chat__heart chat__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="chat__heart-green" src="images/all/heart-green.gif" alt="сердечко">
+              <h2 class="chat__title title-big">ЧАТ</h2>
+              <div class="chat__how"><img class="chat__how-deals" src="images/chat/chat-deals.svg" alt="как дела" width="250" height="87"><img class="chat__how-smile" src="images/chat/smile-h.png" alt="смайлик" width="67" height="67"></div>
+            </div>
+            <div class="chat__content">
+              <div class="chat__manage">
+                <picture>
+                  <source srcset="images/chat/chat-desk.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="images/chat/chat-desk.jpg" media="(min-width: 768px)" type="image/jpg">
+                  <source srcset="images/chat/chat-mob.webp" type="image/webp"><img src="images/chat/chat-mob.jpg" alt="подарки" width="651" height="1092">
+                </picture>
+              </div>
+              <div class="chat__hello"><img class="chat__hello-smile" src="images/chat/smile-love.png" alt="смайлик" width="79" height="79"><img class="chat__hello-text" src="images/chat/chat-hello.svg" alt="привет" width="156" height="87"></div><img class="chat__happy" src="images/chat/smile-happy.png" alt="смайлик" width="76" height="76">
+            </div>
+          </div>
+        </section>
+        <section class="meme">
+          <div class="left meme__left"><img class="left__cells" src="images/all/left-meme.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
+          <div class="meme__inner">
+            <div class="meme__top container"><img class="meme__top-heart meme__top-heart__1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="meme__top-heart meme__top-heart__2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="meme__top-heart__pink" src="images/all/heart-pink.gif" alt="сердечко" width="68">
+              <h2 class="meme__title title-big"><span>МЕМЫ В</span><img src="images/icons/meme-heart.svg" alt="сердечко" width="36" height="34"></h2>
+              <p class="meme__text text">Любви достойны только мемы. <br>
+                Делись любимыми мемами с коллегами и смейся от всего сердца XD
+              </p>
+            </div>
+            <form class="form meme__form container" action="#">
+              <div class="form__inner">
+                <div class="form__top">
+                  <div class="form__box">
+                    <label class="form__label"><span class="form__name">Имя</span>
+                      <input class="form__field" type="text" placeholder="Имя">
+                    </label>
+                    <label class="form__label"><span class="form__name">Фамилия</span>
+                      <input class="form__field" type="text" placeholder="Фамилия">
+                    </label>
+                  </div>
+                  <label class="form__download">
+                    <input class="form__download-input" type="file"><span class="form__download-top"><img class="form__download-icon" src="images/icons/btn.svg" alt="иконка кнопки"><span class="form__download-meme">Загрузить мем</span></span><span class="form__download-bottom"><span class="form__download-here">Перетащите изображение сюда </span><span class="form__download-text">Размер файла не более 15 мб</span></span>
+                  </label>
+                </div>
+                <button class="btn"><span>отправить</span></button>
+              </div><img class="meme__form-heart meme__form-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="meme__form-heart meme__form-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50">
+            </form>
+            <div class="meme__slider">
+              <div class="meme__slider-container swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                  <div class="meme__item swiper-slide">
+                    <div class="meme__content"><img class="meme__photo" src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148">
+                      <div class="meme__loop"><a class="meme__loop-btn" href="#"> <img src="images/icons/loop.svg" alt="увеличить" width="21" height="21"></a></div>
+                    </div>
+                    <div class="meme__info">
+                      <p class="meme__author">Александр Иванов</p>
+                      <div class="meme__like"><span class="meme__like-num">+3</span><a class="meme__link-btn" href="#"><img src="images/icons/like.svg" alt="лайк" width="38" height="34"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="swiper-button-prev meme__prev"></button>
+              <button class="swiper-button-next meme__next"></button>
+            </div>
+          </div>
+        </section>
+        <section class="zodiac">
+          <div class="zodiac__inner container">
+            <div class="zodiac__top"><img class="zodiac__top-heart" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="zodiac__top-pink" src="images/all/heart-pink.gif" alt="сердечко" width="68">
+              <h2 class="title-big zodiac__title">гороскоп</h2>
+            </div>
+            <ul class="zodiac__list">
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/oven.png" alt="овен" width="73" height="73"></div>
+                  <p class="zodiac__name">Овен</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/telec.png" alt="телец" width="73" height="73"></div>
+                  <p class="zodiac__name">Телец</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/bliznecy.png" alt="близнецы" width="73" height="73"></div>
+                  <p class="zodiac__name">Близнецы</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/rak.png" alt="Рак" width="73" height="73"></div>
+                  <p class="zodiac__name">Рак</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/lev.png" alt="Лев" width="73" height="73"></div>
+                  <p class="zodiac__name">Лев</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/deva.png" alt="Дева" width="73" height="73"></div>
+                  <p class="zodiac__name">Дева</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/vesi.png" alt="Весы" width="73" height="73"></div>
+                  <p class="zodiac__name">Весы</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/skorpion.png" alt="Скорпион" width="73" height="73"></div>
+                  <p class="zodiac__name">Скорпион</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/strelec.png" alt="Стрелец" width="73" height="73"></div>
+                  <p class="zodiac__name">Стрелец</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/kozerog.png" alt="Козерог" width="73" height="73"></div>
+                  <p class="zodiac__name">Козерог</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/vodoley.png" alt="Водолей" width="73" height="73"></div>
+                  <p class="zodiac__name">Водолей</p></a></li>
+              <li class="zodiac__item"><a class="zodiac__sign" href="#">
+                  <div class="zodiac__icon"><img src="images/zodiac/ryby.png" alt="Рыбы" width="73" height="73"></div>
+                  <p class="zodiac__name">Рыбы</p></a></li>
             </ul>
-            <button class="btn"><span>отправить</span></button><img class="survey__info-heart survey__info-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__info-heart survey__info-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="survey__info-pink" src="images/all/heart-pink.gif" alt="сердечко">
-            <div class="right survey__bottom"><img class="right__cells" src="images/all/right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
-          </form>
+          </div>
+        </section>
+        <section class="gift">
+          <div class="left gift__left"><img class="left__cells" src="images/gift/gift-left.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-pink.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-red.svg" alt="смайл" width="101" height="98"></div>
+          <div class="right gift__right"><img class="right__cells" src="images/gift/gift-right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-green.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
+          <div class="gift__inner">
+            <div class="gift__top container">
+              <h2 class="gift__title title-big">что подарить?</h2><img class="gift__top-heart gift__top-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="gift__top-heart gift__top-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="gift__top-pink" src="images/all/heart-pink.gif" alt="сердечко" width="68">
+            </div>
+            <div class="gift__content">
+              <div class="gift__box">
+                <div class="gift__info container gift__info--woman">
+                  <div class="gift__info-top gift__info-top--woman"><img class="gift__info-icon" src="images/gift/woman.svg" alt="иконка" width="63">
+                    <p class="gift__info-title">Для неё</p>
+                  </div>
+                  <p class="gift__info-text text">На дворе День всех влюбленных, и ты гуглишь «заказать букет роз в виде медведя»? Воу, погоди, это, конечно, выход, но вот пару небанальных вариантов, которые могут обрадовать ТУ самую. Кстати, а какая она – твоя половинка?</p>
+                </div>
+                <div class="gift__slider gift__slider-woman">
+                  <div class="gift__slider-container swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="gift__slide gift__slide-woman swiper-slide">
+                        <h3 class="gift__slide-title">- Она у меня очень заботливая :)</h3>
+                        <p class="gift__slide-text">Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. <b>Комплексное медицинское обследование</b> явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.</p>
+                      </div>
+                      <div class="gift__slide gift__slide-woman swiper-slide">
+                        <h3 class="gift__slide-title">- Она у меня очень заботливая :)</h3>
+                        <p class="gift__slide-text">Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.</p>
+                      </div>
+                      <div class="gift__slide gift__slide-woman swiper-slide">
+                        <h3 class="gift__slide-title">- Она у меня очень заботливая :)</h3>
+                        <p class="gift__slide-text">Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="swiper-button-prev gift__prev"></button>
+                  <button class="swiper-button-next gift__next"></button>
+                </div>
+              </div>
+              <div class="gift__box gift__box--man"><img class="gift__box-heart gift__box-heart--1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="gift__box-heart gift__box-heart--2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="gift__box-heart__green" src="images/all/heart-green.gif" alt="сердечко" width="68">
+                <div class="gift__info container">
+                  <div class="gift__info-top"><img class="gift__info-icon" src="images/gift/man.svg" alt="иконка" width="53">
+                    <p class="gift__info-title">Для него</p>
+                  </div>
+                  <p class="gift__info-text text">Ок, девочки, признавайтесь. Часто промахиваетесь с подарком парню или другу, потому что хотите, чтобы ему было хорошо, а он хочет, чтобы было просто весело и ещё «вертолётик с пультиком»? В этот раз мы провели основательную разведку «объекта обожания», поэтому точно попадём в ЕГО сердечко. Итак, что мы знаем о нём?</p>
+                </div>
+                <div class="gift__slider gift__slider-man">
+                  <div class="gift__slider-container swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="gift__slide gift__slide-man swiper-slide">
+                        <h3 class="gift__slide-title">- - Она у меня очень заботливая :)</h3>
+                        <p class="gift__slide-text">Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.</p>
+                      </div>
+                      <div class="gift__slide gift__slide-man swiper-slide">
+                        <h3 class="gift__slide-title">- - Она у меня очень заботливая :)</h3>
+                        <p class="gift__slide-text">Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.</p>
+                      </div>
+                      <div class="gift__slide gift__slide-man swiper-slide">
+                        <h3 class="gift__slide-title">- - Она у меня очень заботливая :)</h3>
+                        <p class="gift__slide-text">Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="swiper-button-prev gift__prev"></button>
+                  <button class="swiper-button-next gift__next"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="love"><img class="love__heart-smile love__heart-smile--3" src="images/all/right-smile-red.svg" alt="смайлик" width="58"><img class="love__heart-pink love__heart-pink--desk love__heart-pink--3" src="images/all/heart-pink.gif" alt="сердечко" width="68">
+          <div class="love__inner">
+            <div class="love__bg"><img class="love__bg-img love__bg-img--mob" src="images/love/love-mob.svg" alt="клеточки"><img class="love__bg-img love__bg-img--desk" src="images/love/love-desk.svg" alt="клеточки">
+              <div class="love__hearts"><img class="love__heart love__heart--1" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--2" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--3" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--4" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--5" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--6" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--7" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--8" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--desk love__heart--9" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--desk love__heart--10" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--desk love__heart--11" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--desk love__heart--12" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart love__heart--desk love__heart--13" src="images/all/heart.gif" alt="сердечко" width="35" height="35"><img class="love__heart-pink love__heart-pink--1" src="images/all/heart-pink.gif" alt="сердечко" width="68"><img class="love__heart-pink love__heart-pink--desk love__heart-pink--2" src="images/all/heart-green.gif" alt="сердечко" width="68"><img class="love__heart-smile love__heart-smile--1" src="images/all/left-smile-green.svg" alt="смайлик" width="58"><img class="love__heart-smile love__heart-smile--2" src="images/all/right-smile-yellow.svg" alt="смайлик" width="58"></div>
+            </div>
+            <p class="love__text text">А самое главное – это, конечно, внимание. <br class="love__text-br"> Скажите, как вам дорог человек, и что вы очень рады и благодарны тому, что он просто есть рядом. <br>
+              Всем любовь <img src="images/love/small-heart.svg" alt="сердечко" width="15" height="13">
+            </p>
+          </div>
         </div>
-      </section>
-    </main>
+      </main>
+    </div>
     <div class="modal diary" style="display: none">
       <div class="modal__inner diary__inner"><img class="diary__icon" src="images/icons/point.svg" alt="!">
         <p class="diary__text">Анкета – как первая любовь, случается с тобой только однажды. Эту анкету можно заполнить только сейчас. <br> Подумай хорошенько.  Второго шанса не будет :(</p>

@@ -1,0 +1,83 @@
+.zodiac
+   margin-bottom: 35px
+   &__top
+      padding-top: 70px
+      position: relative
+      &-heart
+         position: absolute
+         right: 0
+         bottom: 0
+      &-pink
+         position: absolute
+         left: 0
+         top: 0
+   &__title
+      margin-bottom: 26px
+   &__list
+      width: 280px
+      margin: 0 auto
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-gap: 24px 32px
+      position: relative
+      z-index: 10
+   &__item
+      width: 73px
+   &__sign
+      display: block
+      font-weight: 600
+      font-size: 14px
+      line-height: 150%
+      text-align: center
+   &__icon
+      margin-bottom: 8px
+      img
+         display: block
+         width: 100%
+
+@media screen and (min-width: 768px)
+   .zodiac
+      &__list
+         width: 100%
+         max-width: 600px
+         grid-template-columns: repeat(4, 1fr)
+         grid-gap: 30px 64px
+      &__item
+         width: auto
+         max-width: 100px
+      &__sign
+         font-size: 18px
+
+@media screen and (min-width: 1024px)
+   .zodiac
+      &__top
+         &-pink
+            left: 200px
+            top: 30px
+      &__list
+         max-width: 1280px
+         grid-template-columns: repeat(6,auto)
+         justify-content: space-between
+
+@media screen and (min-width: 1280px)
+   .zodiac
+      &__title
+         margin-bottom: 40px
+      &__list
+         grid-gap: 76px 64px
+      &__item
+         width: 130px
+         max-width: 130px
+
+@media screen and (min-width: 1365px)
+   .zodiac
+      margin-bottom: 55px
+      &__top
+         padding-top: 86px
+         &-pink
+            width: 110px
+            left: 230px
+            top: 50px
+      &__title
+         margin-bottom: 50px
+         font-size: 72px

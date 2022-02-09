@@ -1,0 +1,279 @@
+.gift
+   margin-bottom: 40px
+   &__left,
+   &__right
+      display: none
+   &__inner
+      width: 100%
+      max-width: 360px
+      margin: 0 auto
+   &__top
+      margin-bottom: 10px
+      padding-top: 60px
+      position: relative
+      &-heart
+         position: absolute
+         &--1
+            top: 0
+            right: 36%
+         &--2
+            bottom: -60px
+            left: 13px
+      &-pink
+         position: absolute
+         right: 16px
+         bottom: -70px
+   &__title
+      position: relative
+      z-index: 5
+   &__box
+      margin-bottom: 35px
+      position: relative
+      &--man
+         padding-top: 40px
+      &:last-child
+         margin-bottom: 0
+      &-heart
+         position: absolute
+         &--1
+            top: -26px
+            right: 30%
+         &--2
+            top: 80px
+            right: 0
+         &__green
+            position: absolute
+            left: 20px
+            top: 15px
+   &__info
+      margin-bottom: 34px
+      &-icon
+         margin-bottom: 10px
+      &-top
+         margin-bottom: 8px
+         display: flex
+         flex-direction: column
+         align-items: center
+         position: relative
+         z-index: 10
+         font-family: $pixelcyr
+         font-weight: 400
+      &-title
+         font-weight: 400
+         font-size: 24px
+         text-transform: uppercase
+      &-text
+         text-align: center
+   &__slider
+      position: relative
+      &-container
+         width: 260px
+         margin: 0 auto
+         overflow: hidden
+   &__prev
+      left: 12px
+   &__next
+      right: 12px
+   &__slide
+      width: 260px
+      margin: 0 auto
+      padding: 28px 28px 44px 26px
+      color: #000
+      font-size: 14px
+      line-height: 150%
+      background: url('../images/gift/gift-man.png') no-repeat center / 100% 100%
+      &-title
+         margin-bottom: 14px
+         font-family: $pixelcyr
+         font-weight: normal
+         font-size: 16px
+         line-height: 167.5%
+      &-woman
+         background: url('../images/gift/gift-woman.png') no-repeat center / 100% 100%
+
+@media screen and (min-width: 768px)
+   .gift
+      &__inner
+         max-width: 100%
+      &__box
+         display: flex
+         align-items: center
+         justify-content: space-between
+         &--man
+            flex-direction: row-reverse
+         &-heart
+            &__green
+               top: -30px
+      &__slider
+         width: 360px
+         min-width: 360px
+      &__info
+         margin-bottom: 0
+         width: calc(100% - 400px)
+         &-top
+            margin-bottom: 20px
+         &-icon
+            margin-bottom: 16px
+         &-text
+            text-align: left
+      &__top
+         margin-bottom: 20px
+         &-pink
+            bottom: 0
+
+@media screen and (min-width: 1024px)
+   .gift
+      &__top
+         margin-bottom: 40px
+      &__content
+         padding: 0 16px
+      &__box
+         margin-bottom: 50px
+      &__info
+         width: calc(100% - 600px)
+         margin: 0
+         padding: 0
+         &-title
+            font-size: 36px
+         &-icon
+            width: 80px
+      &__slider
+         width: 733px
+         min-width: 733px
+         &-container
+            width: 583px
+      &__slide
+         width: 583px
+         min-height: 349px
+         padding: 66px 44px 60px 72px
+         font-size: 16px
+         background: url(../images/gift/gift-man-desk.png) no-repeat center/100% 100%
+         &-woman
+            background: url(../images/gift/gift-woman-desk.png) no-repeat center/100% 100%
+         &-title
+            font-size: 20px
+
+@media screen and (min-width: 1280px)
+   .gift
+      &__content
+         width: 100%
+         max-width: 1312px
+         margin: 0 auto
+      &__info
+         max-width: 434px
+         &--woman
+            max-width: 472px
+            padding-left: 78px
+            .gift
+               &__info
+                  &-icon
+                     width: 122px
+         &-top
+            margin-bottom: 12px
+            flex-direction: row
+            justify-content: flex-start
+            &--woman
+               .gift
+                  &__info
+                     &-icon
+                        margin-right: 20px
+         &-icon
+            margin: 0
+            margin-right: 50px
+         &-title
+            padding-top: 20px
+      &__box
+         align-items: flex-start
+         &:nth-child(odd)
+            padding-left: 30px
+         &:nth-child(even)
+            align-items: center
+            padding-right: 82px
+
+@media screen and (min-width: 1365px)
+   .gift
+      &__top
+         margin-bottom: 58px
+      &__box
+         margin-bottom: 22px
+
+@media screen and (min-width: 1900px)
+   .gift
+      position: relative
+      &__top
+         &-heart
+            &--2
+               display: none
+         &-pink
+            display: none
+      &__left,
+      &__right
+         display: block
+      &__left
+         left: -15px
+         top: -163px
+         .left
+            &__heart
+               &-green
+                  right: 312px
+               &-pink
+                  right: auto
+                  left: 26px
+                  bottom: 235px
+               &-red
+                  display: none
+               &-1
+                  right: auto
+                  left: 27px
+                  top: 23px
+               &-2
+                  right: 311px
+               &-3
+                  top: 320px
+                  right: 490px
+               &-5
+                  right: 251px
+               &-6
+                  top: 557px
+                  right: 431px
+            &__smile
+               &-green
+                  bottom: 347px
+                  right: 311px
+               &-yellow
+                  bottom: auto
+                  top: 140px
+      &__right
+         width: 374px
+         height: 752px
+         bottom: auto
+         top: -505px
+         .right
+            &__heart
+               &-2
+                  top: 140px
+                  left: 184px
+               &-3
+                  left: auto
+                  right: 20px
+                  top: 200px
+               &-5
+                  left: 125px
+                  top: 498px
+               &-6
+                  top: 613px
+                  left: 66px
+               &-green
+                  left: auto
+                  right: 22px
+                  top: 32px
+               &-yellow
+                  left: auto
+                  right: 20px
+            &__smile
+               &-red
+                  display: none
+               &-pink
+                  top: 388px
+                  right: 82px
+                  left: auto

@@ -1,0 +1,282 @@
+.match
+   padding-bottom: 65px
+   &__top
+      padding-bottom: 34px
+      position: relative
+      &-heart
+         position: absolute
+         &--1
+            left: 0
+            top: -20px
+         &--2
+            right: 0
+            bottom: 0
+      &-archer
+         display: none
+   &__title
+      margin-bottom: 10px
+   &__text
+      max-width: 360px
+      margin: 0 auto
+      padding: 0 2px
+      text-align: center
+      &-br
+         display: none
+   &__percent
+      font-family: $opirus
+      font-size: 64px
+      line-height: 80%
+      color: #FFFF00
+      text-align: center
+   &__slider
+      margin-bottom: 26px
+      overflow: hidden
+      position: relative
+   &__person
+      width: 268px
+      min-height: 213px
+      padding: 22px 24px 24px
+      margin: 0 auto
+      margin-bottom: 13px
+      background: url('../images/match/match-mob.png') no-repeat center / 100% 100%
+      color: #000
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      position: relative
+      &-heart
+         position: absolute
+         top: -26px
+         left: 50%
+         transform: translateX(-50%)
+         &--desk
+            display: none
+      &:last-child
+         margin-bottom: 0
+   &__info
+      display: flex
+      align-items: center
+   &__photo
+      width: 110px
+      min-width: 110px
+      margin-right: 20px
+      img
+         width: 100%
+   &__name
+      font-family: $opirus
+      font-size: 24px
+      line-height: 80%
+      word-spacing: 9999px
+   &__read
+      min-width: 223px
+      min-height: 57px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      font-family: $pixelcyr
+      text-transform: uppercase
+      background: url('../images/match/read-btn.svg') no-repeat center / 100% 100%
+      font-size: 18px
+      span
+         position: relative
+         z-index: 5
+   &__have
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+      z-index: 5
+      &-arrow
+         margin-bottom: 16px
+         &--desk
+            display: none
+   &__prev
+      top: 54%
+      left: 0
+   &__next
+      top: 54%
+      right: 0
+   &__event
+      width: 100%
+      max-width: 360px
+      margin: 0 auto
+      position: relative
+   &__heart
+      position: absolute
+      &--1
+         top: -5px
+         left: -5px
+      &--2
+         bottom: 60px
+         left: 10px
+      &--3
+         bottom: -70px
+         right: 30px
+      &--4
+         bottom: 50px
+         right: 0
+      &-green
+         position: absolute
+         bottom: -80px
+         left: 0
+   &__left,
+   &__right
+      display: none
+
+@media screen and (min-width: 768px)
+   .match
+      &__event
+         max-width: 100%
+      &__item
+         display: flex
+         justify-content: center
+      &__person
+         width: 304px
+         min-width: 304px
+         min-height: 384px
+         padding: 52px 70px 34px
+         margin: 0
+         margin-right: 30px
+         background: url('../images/match/match-desk.png') no-repeat center / 100% 100%
+         &:last-child
+            margin-right: 0
+         &-heart
+            top: 50%
+            transform: translateY(-50%)
+            left: -77px
+            &--mob
+               display: none
+            &--desk
+               display: block
+      &__info
+         margin-bottom: 18px
+         flex-direction: column
+         align-items: center
+      &__photo
+         width: 175px
+         margin-right: 0
+         margin-bottom: 15px
+      &__name
+         text-align: center
+         font-size: 36px
+         line-height: 80%
+      &__text
+         max-width: 100%
+         &-br
+            display: inline
+      &__percent
+         font-size: 80px
+         max-width: 300px
+         margin: 0 auto
+         margin-bottom: 10px
+      &__slider
+         width: 100%
+         max-width: 728px
+         margin: 0 auto
+         margin-bottom: 30px
+
+@media screen and (min-width: 1024px)
+   .match
+      &__title
+         margin-bottom: 20px
+      &__slider
+         max-width: 760px
+
+@media screen and (min-width: 1280px)
+   .match
+      &__header
+         position: relative
+      &__timer
+         margin: 0
+         position: absolute
+         left: 50px
+         bottom: -120px
+      &__event
+         display: flex
+         flex-direction: column
+         align-items: center
+      &__have
+         margin-left: 36px
+         margin-bottom: 40px
+         order: -1
+         flex-direction: row
+         &-arrow
+            margin: 0
+            margin-right: 35px
+            &--mob
+               display: none
+            &--desk
+               display: block
+      &__heart
+         &--1
+            top: 250px
+      &__slider
+         margin-bottom: 0
+      &__top
+         &-archer
+            display: block
+            position: absolute
+            right: 80px
+            top: -30px
+
+@media screen and (min-width: 1365px)
+   .match
+      padding-bottom: 112px
+      position: relative
+      &__timer
+         left: 65px
+         bottom: -100px
+      &__have
+         margin-bottom: 48px
+      &__percent
+         font-size: 96px
+      &__slider
+         max-width: 844px
+      &__heart
+         display: none
+         &-green
+            width: 110px
+            bottom: -130px
+            left: 20%
+      &__left,
+      &__right
+         display: block
+      &__left
+         top: auto
+         bottom: -140px
+         left: -270px
+      &__right
+         height: 660px
+         width: 320px
+         .right
+            &__smile
+               &-red
+                  display: none
+
+@media screen and (min-width: 1440px)
+   .match
+      &__top
+         &-archer
+            right: 122px
+            top: -40px
+
+@media screen and (min-width: 1600px)
+   .match
+      &__left
+         left: -200px
+         bottom: -100px
+      &__right
+         width: 380px
+      &__heart
+         &-green
+            display: none
+
+@media screen and (min-width: 1900px)
+   .match
+      &__left
+         left: -70px
+         bottom: -166px
+      &__right
+         width: 502px
+         bottom: -60px

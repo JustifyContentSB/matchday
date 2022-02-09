@@ -1,0 +1,168 @@
+.lecture
+   margin-bottom: 30px
+   &__header
+      margin-bottom: 4px
+      padding-bottom: 30px
+      position: relative
+   &__heart
+      position: absolute
+      &-1
+         bottom: 0
+         left: 0
+   &__title
+      margin-bottom: 10px
+   &__text
+      text-align: center
+      &-br
+         display: none
+   &__item
+      width: 239px
+   &__video
+      border: 2px solid #000
+      &-inner
+         border: 3px solid #fff
+      &-top
+         height: 25px
+         padding-right: 4px
+         display: flex
+         align-items: center
+         justify-content: flex-end
+         background: $bodyBg
+         border-bottom: 3px solid #fff
+      &-icon
+         margin-left: 4px
+         img
+            width: 100%
+            display: block
+      &-content
+         height: 148px
+         overflow: hidden
+         display: flex
+         justify-content: center
+         align-items: center
+         position: relative
+      &-play
+         width: 45px
+         position: absolute
+         left: 50%
+         top: 50%
+         transform: translate(-50%, -50%)
+         img
+            width: 100%
+            display: block
+   &__info
+      padding: 15px 10px 0
+   &__about
+      margin-bottom: 13px
+      font-family: $opirus
+      font-weight: 400
+      font-size: 24px
+      line-height: 80%
+      text-align: center
+   &__author
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 150%
+      text-align: center
+   &__time
+      font-size: 36px
+      line-height: 80%
+      text-align: center
+      color: $accent
+      font-family: $opirus
+   &__slider
+      padding-left: 59px
+      overflow: hidden
+      position: relative
+      &-container
+         padding-right: 16px
+         overflow: hidden
+   &__next
+      position: absolute
+      right: auto
+      left: 12px
+      top: 58%
+
+@media screen and (min-width: 768px)
+   .lecture
+      &__item
+         width: 280px
+      &__video
+         &-content
+            height: 180px
+      &__text
+         &-br
+            display: inline
+
+@media screen and (min-width: 1024px)
+   .lecture
+      &__title
+         margin-bottom: 20px
+      &__inner
+         width: 100%
+         max-width: 1296px
+         margin: 0 auto
+      &__slider
+         padding: 0 16px
+         &-container
+            padding: 0
+         .swiper
+            &-wrapper
+               flex-wrap: wrap
+      &__item
+         width: calc(33.33% - 20px)
+         margin-right: 30px
+         margin-bottom: 20px
+         &:nth-child(3n)
+            margin-right: 0
+      &__next
+         display: none
+      &__info
+         min-height: 126px
+         display: flex
+         flex-direction: column
+         align-items: center
+      &__time
+         margin-top: auto
+      
+@media screen and (min-width: 1280px)
+   .lecture
+      &__video
+         border-width: 4px
+         &-inner
+            border-width: 4px
+         &-top
+            height: 41px
+            padding-right: 7px
+            border-width: 4px
+         &-icon
+            width: 23px
+            margin-left: 7px
+         &-content
+            height: 252px
+      &__about
+         font-size: 32px
+      &__author
+         font-size: 16px
+      &__time
+         font-size: 56px
+      &__info
+         min-height: 158px
+
+@media screen and (min-width: 1365px)
+   .lecture
+      &__header
+         padding-bottom: 42px
+      &__about
+         min-height: 58px
+         margin-bottom: 10px
+         font-size: 36px
+         display: flex
+         justify-content: center
+         align-items: center
+      &__info
+         min-height: 168px
+         padding: 0
+         padding-top: 20px
+      &__time
+         font-size: 64px

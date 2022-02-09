@@ -1,0 +1,658 @@
+extends base/_layout
+block head
+    title Главная
+block page
+    .wrapper
+        header.header
+            .header__inner.container
+                a.header__burger(href="#")
+                    img(src="images/icons/burger.svg" alt="открыть меню" width="28" height="24")
+                nav.header__nav
+                    a.header__nav-close(href="#")
+                        img(src="images/icons/close.svg", alt="закрыть меню")
+                    ul.header__list
+                        li.header__item.header__item--active
+                            a.header__link(href="#") главная
+                        li.header__item
+                            a.header__link(href="#") MATCH TIME
+                        li.header__item
+                            a.header__link(href="#") ЛЕКЦИИ
+                        li.header__item
+                            a.header__link(href="#") ЧАТ
+                        li.header__item
+                            a.header__link(href="#") МЕМЫ
+                        li.header__item
+                            a.header__link(href="#") ГОРОСКОП
+                        li.header__item
+                            a.header__link(href="#") что подарить?
+        main.main
+            section.greeting
+                .greeting__inner
+                    .greeting__top.container
+                        .greeting__logo
+                            img.greeting__logo-img(src="images/greeting/match-mob.svg" alt="match day" width="298" height="106")
+                            img.greeting__logo-smile.greeting__logo-smile--1(src="images/all/left-smile-green.svg", alt="смайлик" width="58")
+                            img.greeting__logo-smile.greeting__logo-smile--2(src="images/all/right-smile-yellow.svg", alt="смайлик" width="58")
+                    p.greeting__text.
+                        Привет! #[br]
+                        С Днём любви, валентинок 
+                        и Raffaello. #[br]
+                        Но помните, что только вы сами можете по-настоящему донести свои чувства до близких :3 #[br]
+                        Здесь вы найдёте не только много весёлого и полезного, но ещё и идеальную пару.
+                    .greeting__bg
+                        img.greeting__cells.greeting__cells--mob(src="images/greeting/greeting-cells.svg" alt="клеточки" width="1321" height="738")
+                        img.greeting__cells.greeting__cells--desk(src="images/greeting/greeting-cells-desk.svg" alt="клеточки" width="2533" height="1406")
+                        .greeting__hearts
+                            img.greeting__heart.greeting__heart--1(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--2(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--3(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--4(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--5(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--6(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--7(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--tablet.greeting__heart--8(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--tablet.greeting__heart--9(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--tablet.greeting__heart--10(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--tablet.greeting__heart--11(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--tablet.greeting__heart--12(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--tablet.greeting__heart--13(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--tablet.greeting__heart--14(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--desk.greeting__heart--15(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--desk.greeting__heart--16(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--desk.greeting__heart--17(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart.greeting__heart--desk.greeting__heart--18(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.greeting__heart-pink.greeting__heart-pink--big.greeting__heart-pink--1(src="images/all/heart-pink.gif", alt="сердечко" width="68")
+                            img.greeting__heart-pink.greeting__heart-pink--tablet.greeting__heart-pink--2(src="images/all/heart-green.gif", alt="сердечко" width="68")
+                            img.greeting__heart-pink.greeting__heart-pink--tablet.greeting__heart-pink--3(src="images/all/heart-green.gif", alt="сердечко" width="68")
+                            img.greeting__heart-pink.greeting__heart-pink--big.greeting__heart-pink--desk.greeting__heart-pink--4(src="images/all/heart-green.gif", alt="сердечко" width="68")
+                            img.greeting__heart-pink.greeting__heart-pink--big.greeting__heart-pink--desk.greeting__heart-pink--5(src="images/all/heart-pink.gif", alt="сердечко" width="68")
+            section.match
+                .left.match__left
+                    img.left__cells(src="images/all/left.svg", alt="клетки")
+                    img.left__heart.left__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-7(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                    img.left__heart-pink(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__heart-red(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__smile-green(src="images/all/left-smile-green.svg", alt="смайл" width="101" height="98")
+                    img.left__smile-yellow(src="images/all/left-smile-yellow.svg", alt="смайл" width="101" height="98")
+                .right.match__right
+                    img.right__cells(src="images/all/right.svg", alt="клетки")
+                    img.right__heart.right__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                    img.right__heart-yellow(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.right__smile-pink(src="images/all/right-smile-pink.svg", alt="смайл" width="101" height="98")
+                    img.right__smile-red(src="images/all/right-smile-red.svg", alt="смайл" width="101" height="98")
+                .match__inner.container
+                    header.match__header
+                        .match__top
+                            img.match__top-heart.match__top-heart--1(src="images/all/heart.gif", alt="сердечко")
+                            img.match__top-heart.match__top-heart--2(src="images/all/heart.gif", alt="сердечко")
+                            img.match__top-archer(src="images/match/archer.png", alt="стрела" width="219" height="207")
+                            h2.title-big.match__title MATCH TIME
+                            p.match__text.text.
+                                Здесь ты увидишь пары, у которых анкеты совпали на 80% и больше! #[br.match__text-br] Следи за таймером, он подскажет, когда пройдет Match Time. #[br]
+                                Если увидишь свою анкету, следуй шагам ниже.
+                        .match__timer.timer
+                            img.timer__bg(src="images/timer/timer.svg" alt="таймер" width="277" height="149")
+                            .timer__list
+                                .timer__bl
+                                    p.timer__num.timer__hours 16
+                                    span.timer__separator
+                                .timer__bl
+                                    p.timer__num.timer__minutes 08
+                                    span.timer__separator
+                                .timer__bl
+                                    p.timer__num.timer__seconds 00
+                    .match__content
+                        .match__event
+                            p.match__percent 91%
+                            .match__slider
+                                .match__slider-container.swiper-container
+                                    .swiper-wrapper
+                                        .match__item.swiper-slide
+                                            .match__person
+                                                .match__info
+                                                    .match__photo
+                                                        img(src="images/match/person-1.png" alt="фото")
+                                                    p.match__name Александр Иванов
+                                                a.match__read(href="#")
+                                                    span читать анкету
+                                            .match__person
+                                                img.match__person-heart.match__person-heart--mob(src="images/match/broken-mob.png", alt="сердечко" width="56")
+                                                img.match__person-heart.match__person-heart--desk(src="images/match/broken-desk.png", alt="сердечко" width="127" height="106")
+                                                .match__info
+                                                    .match__photo
+                                                        img(src="images/match/person-2.png" alt="фото")
+                                                    p.match__name Мария Петрова
+                                                a.match__read(href="#")
+                                                    span читать анкету
+                                        .match__item.swiper-slide
+                                            .match__person
+                                                .match__info
+                                                    .match__photo
+                                                        img(src="images/match/person-1.png" alt="фото")
+                                                    p.match__name Александр Иванов
+                                                a.match__read(href="#")
+                                                    span читать анкету
+                                            .match__person
+                                                img.match__person-heart.match__person-heart--mob(src="images/match/broken-mob.png", alt="сердечко" width="56")
+                                                img.match__person-heart.match__person-heart--desk(src="images/match/broken-desk.png", alt="сердечко" width="127" height="106")
+                                                .match__info
+                                                    .match__photo
+                                                        img(src="images/match/person-2.png" alt="фото")
+                                                    p.match__name Мария Петрова
+                                                a.match__read(href="#")
+                                                    span читать анкету
+                                button.swiper-button-prev.match__prev
+                                button.swiper-button-next.match__next
+                            .match__have
+                                img.match__have-arrow.match__have-arrow--mob(src="images/match/arrow-down.svg" alt="стрелочка" width="30" height="37")
+                                img.match__have-arrow.match__have-arrow--desk(src="images/icons/arrow-right.svg", alt="стрелочка" width="65" height="30")
+                                a.match__have-link.btn(href="#")
+                                    span Есть MATCH
+                            img.match__heart.match__heart--1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                            img.match__heart.match__heart--2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                            img.match__heart.match__heart--3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                            img.match__heart.match__heart--4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                            img.match__heart-green(src="images/all/heart-green.gif", alt="сердечко" width="68")
+            section.lecture
+                .lecture__inner
+                    header.lecture__header.container
+                        h2.lecture__title.title-big лекции
+                        p.lecture__text.text.
+                            Забегай в Wellness Room, чтобы послушать спикеров и задать вопросы лично. #[br]
+                            Или подключайся к прямой трансляции в указанное время. #[br.lecture__text-br]
+                            Не успеваешь? Не страшно! Мы сохраним для тебя запись с выступления здесь.
+                        img.lecture__heart.lecture__heart-1(src="images/all/heart.gif" alt="сердечко" width="50" height="50")
+                    .lecture__slider
+                        .lecture__slider-container.swiper-container
+                            .swiper-wrapper
+                                .lecture__item.swiper-slide
+                                    .lecture__video
+                                        .lecture__video-inner
+                                            .lecture__video-top
+                                                span.lecture__video-icon
+                                                    img(src="images/lecture/lecture-icon-1.svg" alt="иконка" width="14" height="14")
+                                                span.lecture__video-icon
+                                                    img(src="images/lecture/lecture-icon-2.svg" alt="иконка" width="14" height="14")
+                                            .lecture__video-content
+                                                img(src="images/lecture/lecture-1.jpg" alt="превью")
+                                                button.lecture__video-play
+                                                    img(src="images/lecture/play.svg" alt="play" width="45")
+                                    .lecture__info
+                                        h3.lecture__about Здоровые отношения, построение коммуникации в паре
+                                        p.lecture__author Екатерина Вишневская
+                                        .lecture__time 12:10 – 12:55
+                                .lecture__item.swiper-slide
+                                    .lecture__video
+                                        .lecture__video-inner
+                                            .lecture__video-top
+                                                span.lecture__video-icon
+                                                    img(src="images/lecture/lecture-icon-1.svg" alt="иконка" width="14" height="14")
+                                                span.lecture__video-icon
+                                                    img(src="images/lecture/lecture-icon-2.svg" alt="иконка" width="14" height="14")
+                                            .lecture__video-content
+                                                img(src="images/lecture/lecture-2.jpg" alt="превью")
+                                                button.lecture__video-play
+                                                    img(src="images/lecture/play.svg" alt="play" width="45")
+                                    .lecture__info
+                                        h3.lecture__about Прекрасные истории любви
+                                        p.lecture__author Никита Монич
+                                        .lecture__time 14:10 – 14:55
+                                .lecture__item.swiper-slide
+                                    .lecture__video
+                                        .lecture__video-inner
+                                            .lecture__video-top
+                                                span.lecture__video-icon
+                                                    img(src="images/lecture/lecture-icon-1.svg" alt="иконка" width="14" height="14")
+                                                span.lecture__video-icon
+                                                    img(src="images/lecture/lecture-icon-2.svg" alt="иконка" width="14" height="14")
+                                            .lecture__video-content
+                                                img(src="images/lecture/lecture-3.jpg" alt="превью")
+                                                button.lecture__video-play
+                                                    img(src="images/lecture/play.svg" alt="play" width="45")
+                                    .lecture__info
+                                        h3.lecture__about Мифы о сексе
+                                        p.lecture__author Зоя Пришивалко
+                                        .lecture__time 15:15 – 16:00
+                        button.lecture__next.swiper-button-next
+
+            section.chat
+                .left.chat__left
+                    img.left__cells(src="images/all/left.svg", alt="клетки")
+                    img.left__heart.left__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-7(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                    img.left__heart-pink(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__heart-red(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__smile-green(src="images/all/left-smile-green.svg", alt="смайл" width="101" height="98")
+                    img.left__smile-yellow(src="images/all/left-smile-yellow.svg", alt="смайл" width="101" height="98")
+                .right.chat__right
+                    img.right__cells(src="images/all/chat-right.svg", alt="клетки")
+                    img.right__heart.right__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                    img.right__heart-yellow(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.right__smile-pink(src="images/all/right-smile-pink.svg", alt="смайл" width="101" height="98")
+                    img.right__smile-red(src="images/all/right-smile-red.svg", alt="смайл" width="101" height="98")
+                .chat__inner.container
+                    .chat__top
+                        img.chat__heart.chat__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.chat__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                        h2.chat__title.title-big ЧАТ
+                        .chat__how
+                            img.chat__how-deals(src="images/chat/chat-deals.svg", alt="как дела" width="250" height="87")
+                            img.chat__how-smile(src="images/chat/smile-h.png", alt="смайлик" width="67" height="67")
+                    .chat__content
+                        .chat__manage
+                            picture
+                                source(srcset="images/chat/chat-desk.webp" media="(min-width: 768px)" type="image/webp")
+                                source(srcset="images/chat/chat-desk.jpg" media="(min-width: 768px)" type="image/jpg")
+                                source(srcset="images/chat/chat-mob.webp" type="image/webp")
+                                img(src="images/chat/chat-mob.jpg" alt="подарки" width="651" height="1092")
+                        .chat__hello
+                            img.chat__hello-smile(src="images/chat/smile-love.png", alt="смайлик" width="79" height="79")
+                            img.chat__hello-text(src="images/chat/chat-hello.svg", alt="привет" width="156" height="87")
+                        img.chat__happy(src="images/chat/smile-happy.png", alt="смайлик" width="76" height="76")
+
+            section.meme
+                .left.meme__left
+                    img.left__cells(src="images/all/left-meme.svg", alt="клетки")
+                    img.left__heart.left__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-7(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                    img.left__heart-pink(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__heart-red(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__smile-green(src="images/all/left-smile-green.svg", alt="смайл" width="101" height="98")
+                    img.left__smile-yellow(src="images/all/left-smile-yellow.svg", alt="смайл" width="101" height="98")
+                .meme__inner
+                    .meme__top.container
+                        img.meme__top-heart.meme__top-heart__1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.meme__top-heart.meme__top-heart__2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.meme__top-heart__pink(src="images/all/heart-pink.gif", alt="сердечко" width="68")
+                        h2.meme__title.title-big
+                            span МЕМЫ В
+                            img(src="images/icons/meme-heart.svg", alt="сердечко" width="36" height="34")
+                        p.meme__text.text.
+                            Любви достойны только мемы. #[br]
+                            Делись любимыми мемами с коллегами и смейся от всего сердца XD
+                    form.form.meme__form.container(action="#")
+                        .form__inner
+                            .form__top
+                                .form__box
+                                    label.form__label
+                                        span.form__name Имя
+                                        input.form__field(type="text" placeholder="Имя")
+                                    label.form__label
+                                        span.form__name Фамилия
+                                        input.form__field(type="text" placeholder="Фамилия")
+                                label.form__download
+                                    input.form__download-input(type="file")
+                                    span.form__download-top
+                                        img.form__download-icon(src="images/icons/btn.svg" alt="иконка кнопки")
+                                        span.form__download-meme Загрузить мем
+                                    span.form__download-bottom
+                                        span.form__download-here Перетащите изображение сюда 
+                                        span.form__download-text Размер файла не более 15 мб
+                            button.btn
+                                span отправить
+                        img.meme__form-heart.meme__form-heart--1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.meme__form-heart.meme__form-heart--2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    .meme__slider
+                        .meme__slider-container.swiper-container
+                            .swiper-wrapper
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                                .meme__item.swiper-slide
+                                    .meme__content
+                                        img.meme__photo(src="images/meme/meme-photo.jpg" alt="мем" width="220" height="148")
+                                        .meme__loop
+                                            a.meme__loop-btn(href="#") 
+                                                img(src="images/icons/loop.svg", alt="увеличить" width="21" height="21")
+                                    .meme__info
+                                        p.meme__author Александр Иванов
+                                        .meme__like
+                                            span.meme__like-num +3
+                                            a.meme__link-btn(href="#")
+                                                img(src="images/icons/like.svg", alt="лайк" width="38" height="34")
+                        button.swiper-button-prev.meme__prev
+                        button.swiper-button-next.meme__next
+
+            section.zodiac
+                .zodiac__inner.container
+                    .zodiac__top
+                        img.zodiac__top-heart(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.zodiac__top-pink(src="images/all/heart-pink.gif", alt="сердечко" width="68")
+                        h2.title-big.zodiac__title гороскоп
+                    ul.zodiac__list
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/oven.png", alt="овен" width="73" height="73")
+                                p.zodiac__name Овен
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/telec.png", alt="телец" width="73" height="73")
+                                p.zodiac__name Телец
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/bliznecy.png", alt="близнецы" width="73" height="73")
+                                p.zodiac__name Близнецы
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/rak.png", alt="Рак" width="73" height="73")
+                                p.zodiac__name Рак
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/lev.png", alt="Лев" width="73" height="73")
+                                p.zodiac__name Лев
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/deva.png", alt="Дева" width="73" height="73")
+                                p.zodiac__name Дева
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/vesi.png", alt="Весы" width="73" height="73")
+                                p.zodiac__name Весы
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/skorpion.png", alt="Скорпион" width="73" height="73")
+                                p.zodiac__name Скорпион
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/strelec.png", alt="Стрелец" width="73" height="73")
+                                p.zodiac__name Стрелец
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/kozerog.png", alt="Козерог" width="73" height="73")
+                                p.zodiac__name Козерог
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/vodoley.png", alt="Водолей" width="73" height="73")
+                                p.zodiac__name Водолей
+                        li.zodiac__item
+                            a.zodiac__sign(href="#")
+                                .zodiac__icon
+                                    img(src="images/zodiac/ryby.png", alt="Рыбы" width="73" height="73")
+                                p.zodiac__name Рыбы
+
+            section.gift
+                .left.gift__left
+                    img.left__cells(src="images/gift/gift-left.svg", alt="клетки")
+                    img.left__heart.left__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart.left__heart-7(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.left__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                    img.left__heart-pink(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__heart-red(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.left__smile-green(src="images/all/left-smile-pink.svg", alt="смайл" width="101" height="98")
+                    img.left__smile-yellow(src="images/all/left-smile-red.svg", alt="смайл" width="101" height="98")
+                .right.gift__right
+                    img.right__cells(src="images/gift/gift-right.svg", alt="клетки")
+                    img.right__heart.right__heart-1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-3(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-4(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-5(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart.right__heart-6(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                    img.right__heart-green(src="images/all/heart-green.gif", alt="сердечко")
+                    img.right__heart-yellow(src="images/all/heart-pink.gif", alt="сердечко")
+                    img.right__smile-pink(src="images/all/right-smile-green.svg", alt="смайл" width="101" height="98")
+                    img.right__smile-red(src="images/all/right-smile-red.svg", alt="смайл" width="101" height="98")
+                .gift__inner
+                    .gift__top.container
+                        h2.gift__title.title-big что подарить?
+                        img.gift__top-heart.gift__top-heart--1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.gift__top-heart.gift__top-heart--2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                        img.gift__top-pink(src="images/all/heart-pink.gif", alt="сердечко" width="68")
+                    .gift__content
+                        .gift__box
+                            .gift__info.container.gift__info--woman
+                                .gift__info-top.gift__info-top--woman
+                                    img.gift__info-icon(src="images/gift/woman.svg", alt="иконка" width="63")
+                                    p.gift__info-title Для неё
+                                p.gift__info-text.text.
+                                    На дворе День всех влюбленных, и ты гуглишь «заказать букет роз в виде медведя»? Воу, погоди, это, конечно, выход, но вот пару небанальных вариантов, которые могут обрадовать ТУ самую. Кстати, а какая она – твоя половинка?
+                            .gift__slider.gift__slider-woman
+                                .gift__slider-container.swiper-container
+                                    .swiper-wrapper
+                                        .gift__slide.gift__slide-woman.swiper-slide
+                                            h3.gift__slide-title - Она у меня очень заботливая :)
+                                            p.gift__slide-text.
+                                                Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. #[b Комплексное медицинское обследование] явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.
+                                        .gift__slide.gift__slide-woman.swiper-slide
+                                            h3.gift__slide-title - Она у меня очень заботливая :)
+                                            p.gift__slide-text.
+                                                Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.
+                                        .gift__slide.gift__slide-woman.swiper-slide
+                                            h3.gift__slide-title - Она у меня очень заботливая :)
+                                            p.gift__slide-text.
+                                                Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.
+                                button.swiper-button-prev.gift__prev
+                                button.swiper-button-next.gift__next
+
+                        .gift__box.gift__box--man
+                            img.gift__box-heart.gift__box-heart--1(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                            img.gift__box-heart.gift__box-heart--2(src="images/all/heart.gif", alt="сердечко" width="50" height="50")
+                            img.gift__box-heart__green(src="images/all/heart-green.gif", alt="сердечко" width="68")
+                            .gift__info.container
+                                .gift__info-top
+                                    img.gift__info-icon(src="images/gift/man.svg", alt="иконка" width="53")
+                                    p.gift__info-title Для него
+                                p.gift__info-text.text.
+                                    Ок, девочки, признавайтесь. Часто промахиваетесь с подарком парню или другу, потому что хотите, чтобы ему было хорошо, а он хочет, чтобы было просто весело и ещё «вертолётик с пультиком»? В этот раз мы провели основательную разведку «объекта обожания», поэтому точно попадём в ЕГО сердечко. Итак, что мы знаем о нём?
+                            .gift__slider.gift__slider-man
+                                .gift__slider-container.swiper-container
+                                    .swiper-wrapper
+                                        .gift__slide.gift__slide-man.swiper-slide
+                                            h3.gift__slide-title - - Она у меня очень заботливая :)
+                                            p.gift__slide-text.
+                                                Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.
+                                        .gift__slide.gift__slide-man.swiper-slide
+                                            h3.gift__slide-title - - Она у меня очень заботливая :)
+                                            p.gift__slide-text.
+                                                Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.
+                                        .gift__slide.gift__slide-man.swiper-slide
+                                            h3.gift__slide-title - - Она у меня очень заботливая :)
+                                            p.gift__slide-text.
+                                                Вам очень повезло. Тогда 14 февраля станет идеальным днём, чтобы проявить свою заботу по отношению к дорогому человеку. Во времена пандемии, возможно лучшее, что мы можем сделать – это проявить внимание к здоровью. Комплексное медицинское обследование явно на полке не запылиться. Твоя половинка точно будет приятно удивлена.
+                                button.swiper-button-prev.gift__prev
+                                button.swiper-button-next.gift__next
+
+            .love
+                img.love__heart-smile.love__heart-smile--3(src="images/all/right-smile-red.svg", alt="смайлик" width="58")
+                img.love__heart-pink.love__heart-pink--desk.love__heart-pink--3(src="images/all/heart-pink.gif", alt="сердечко" width="68")
+                .love__inner
+                    .love__bg
+                        img.love__bg-img.love__bg-img--mob(src="images/love/love-mob.svg", alt="клеточки")
+                        img.love__bg-img.love__bg-img--desk(src="images/love/love-desk.svg", alt="клеточки")
+                        .love__hearts
+                            img.love__heart.love__heart--1(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--2(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--3(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--4(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--5(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--6(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--7(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--8(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--desk.love__heart--9(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--desk.love__heart--10(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--desk.love__heart--11(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--desk.love__heart--12(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart.love__heart--desk.love__heart--13(src="images/all/heart.gif", alt="сердечко" width="35" height="35")
+                            img.love__heart-pink.love__heart-pink--1(src="images/all/heart-pink.gif", alt="сердечко" width="68")
+                            img.love__heart-pink.love__heart-pink--desk.love__heart-pink--2(src="images/all/heart-green.gif", alt="сердечко" width="68")
+                            img.love__heart-smile.love__heart-smile--1(src="images/all/left-smile-green.svg", alt="смайлик" width="58")
+                            img.love__heart-smile.love__heart-smile--2(src="images/all/right-smile-yellow.svg", alt="смайлик" width="58")
+                    p.love__text.text.
+                        А самое главное – это, конечно, внимание. #[br.love__text-br] Скажите, как вам дорог человек, и что вы очень рады и благодарны тому, что он просто есть рядом. #[br]
+                        Всем любовь #[img(src="images/love/small-heart.svg", alt="сердечко" width="15" height="13")]

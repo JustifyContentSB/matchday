@@ -1,0 +1,97 @@
+.header
+   background: $pink
+   &__inner
+      padding: 7px 16px
+   &__burger
+      width: 40px
+      height: 40px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+   &__nav
+      width: 100%
+      padding: 30px
+      padding-top: 70px
+      position: fixed
+      z-index: 1000
+      top: 0
+      left: 0
+      bottom: 0
+      transform: translateX(-100%)
+      background: $pink
+      overflow-y: auto
+      transition: transform .3s ease
+      &--active
+         transform: translateX(0)
+      &-close
+         display: inline-block
+         position: absolute
+         right: 16px
+         top: 16px
+         width: 40px
+         height: 40px
+   &__link
+      padding: 15px 20px
+      display: inline-flex
+      text-transform: uppercase
+      font-size: 20px
+      line-height: 81%
+      font-family: $pixelcyr
+      color: #663EC6
+      border: 5px solid transparent
+      transition: color .2s ease
+      &:hover,
+      &:focus
+         color: $accent
+   &__item
+      margin-bottom: 10px
+      &--active
+         .header
+            &__link
+               border: 5px solid #000
+               color: #000
+
+@media screen and (min-width: 1280px)
+   .header
+      &__inner
+         padding: 12px 16px
+      &__burger
+         display: none
+      &__nav
+         padding: 0
+         position: static
+         transform: translateX(0)
+         overflow: visible
+         &-close
+            display: none
+      &__list
+         width: 100%
+         max-width: 1240px
+         margin: 0 auto
+         display: flex
+         justify-content: space-between
+         align-items: center
+      &__item
+         margin-bottom: 0
+         position: relative
+         &::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: -30px
+            transform: translateY(-50%)
+            width: 15px
+            height: 12px
+            background: url('../images/icons/link-icon.svg')
+         &:last-child
+            &::after
+               display: none
+         &--active
+            &::after
+               display: none
+            .header
+               &__link
+                  padding: 10px 24px
+      &__link
+         padding: 0
+         font-size: 24px

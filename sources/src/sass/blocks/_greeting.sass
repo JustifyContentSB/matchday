@@ -1,0 +1,274 @@
+.greeting
+   margin-bottom: 50px
+   &__inner
+      padding: 52px 16px 157px
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+      overflow: hidden
+   &__top
+      position: relative
+      z-index: 10
+   &__logo
+      width: 296px
+      margin: 0 auto
+      margin-bottom: 62px
+      position: relative
+      &-img
+         width: 100%
+      &-smile
+         position: absolute
+         &--1
+            left: -6px
+            top: -42px
+         &--2
+            right: -10px
+            bottom: -34px
+   &__text
+      width: 100%
+      max-width: 244px
+      margin: 0 auto
+      font-size: 16px
+      line-height: 150%
+      text-align: center
+      position: relative
+      z-index: 10
+   &__bg
+      width: 100%
+      overflow: hidden
+      position: relative
+      display: flex
+      justify-content: center
+      position: absolute
+      top: -120px
+      left: 0
+      right: 0
+      overflow: hidden
+   &__cells
+      max-width: none
+      height: auto
+      position: relative
+      left: 18px
+      &--desk
+         display: none
+   &__hearts
+      width: 360px
+      height: 100%
+      position: absolute
+      top: 0
+      bottom: 0
+   &__heart
+      position: absolute
+      &--tablet, &--desk
+         display: none
+      &--1
+         top: 124px
+         left: 180px
+      &--2
+         left: 19px
+         top: 286px
+      &--3
+         right: 21px
+         top: 368px
+      &--4
+         left: 19px
+         top: 491px
+      &--5
+         top: 612px
+         right: 62px
+      &--6
+         top: 695px
+         right: 101px
+      &--7
+         top: 614px
+         left: 101px
+      &-pink
+         position: absolute
+         display: none
+         &--1
+            display: block
+            bottom: 4px
+            left: 20px
+         &--desk
+            display: none
+
+@media screen and (min-width: 768px)
+   .greeting
+      &__heart
+         &--tablet
+            display: block
+         &--8
+            left: -104px
+            top: 408px
+         &--9
+            left: -104px
+            top: 245px
+         &--10
+            right: -61px
+            top: 287px
+         &--11
+            right: -142px
+            top: 491px
+         &--12
+            top: 572px
+            right: -101px
+         &--13
+            top: 654px
+            left: -104px
+         &--14
+            top: 654px
+            right: -184px
+         &-pink
+            &--2, &--3
+               display: block
+            &--2
+               top: 200px
+               right: -150px
+            &--3
+               bottom: 100px
+               left: -100px
+
+@media screen and (min-width: 1024px)
+   .greeting
+      &__inner
+         padding: 100px 16px 222px
+      &__logo
+         width: 500px
+         margin-bottom: 170px
+         &-smile
+            width: 103px
+            &--1
+               top: -60px
+               left: -40px
+            &--2
+               right: -30px
+      &__bg
+         top: -520px
+      &__cells
+         left: 55px
+         &--mob
+            display: none
+         &--desk
+            display: block
+      &__text
+         max-width: 592px
+         font-size: 18px
+      &__hearts
+         width: 1000px
+         top: 400px
+      &__heart
+         width: 50px
+         height: 50px
+         &--1
+            top: 129px
+            left: 173px
+         &--2
+            left: 54px
+            top: 305px
+         &--3
+            right: 5px
+            top: 365px
+         &--4
+            left: 53px
+            top: 482px
+         &--5
+            top: 601px
+            right: 65px
+         &--6
+            top: 781px
+            right: 124px
+         &--7
+            top: 602px
+            left: 114px
+         &--8
+            left: 232px
+            top: 424px
+         &--9
+            left: auto
+            right: 5px
+         &--10
+            top: 127px
+            right: 124px
+         &--11
+            right: auto
+            left: 173px
+            top: 780px
+         &--12
+            right: 302px
+            top: 838px
+         &--13
+            top: 482px
+            left: 530px
+         &--14
+            right: 65px
+            top: 482px
+         &-pink
+            &--big
+               width: 82px
+            &--1
+               bottom: auto
+               top: 740px
+            &--2
+               bottom: auto
+               top: 850px
+               right: auto
+               left: 250px
+            &--3
+               bottom: auto
+               left: auto
+               top: 260px
+               right: 80px
+
+@media screen and (min-width: 1365px)
+   .greeting
+      &__inner
+         padding-top: 122px
+         padding-bottom: 225px
+      &__logo
+         width: 660px
+         margin-bottom: 88px
+      &__heart
+         &--desk
+            display: block
+         &--15
+            top: 128px
+            left: -64px
+         &--16
+            top: 720px
+            left: -123px
+         &--17
+            top: 423px
+            left: -123px
+         &--18
+            right: -114px
+            top: 722px
+         &-pink
+            &--big
+               width: 110px
+            &--1
+               top: 722px
+            &--desk
+               display: block
+            &--4
+               left: -120px
+               top: 250px
+            &--5
+               right: -120px
+               top: 450px
+
+@media screen and (min-width: 1440px)
+   .greeting
+      margin-bottom: 120px
+      &__inner
+         padding-top: 127px
+      &__logo
+         width: 736px
+         margin-bottom: 56px
+      &__heart
+         &--13
+            top: 186px
+         &-pink
+            &--3
+               top: 270px
+               right: -95px
