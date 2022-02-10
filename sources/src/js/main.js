@@ -153,6 +153,7 @@ const durationTime = document.getElementById("durationTime");
 
 let play = document.getElementById("play");
 let pause = document.getElementById("pause");
+let pause2 = document.getElementById("pause2");
 let next = document.getElementById("next-track");
 let prev = document.getElementById("prev-track");
 trackIndex = 0;
@@ -185,8 +186,17 @@ function pausePlay() {
     }
 }
 
+function pausePlay2() {
+    pause.style.display = "none";
+    play.style.display = "block";
+
+    track.pause();
+    playing = true;
+}
+
 play.addEventListener("click", pausePlay);
 pause.addEventListener("click", pausePlay);
+pause2.addEventListener("click", pausePlay2);
 
 track.addEventListener("ended", nextTrack);
 

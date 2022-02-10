@@ -24,7 +24,7 @@
    &__inner
       width: 100%
       max-width: 370px
-      height: 250px
+      height: 485px
       padding: 12px 23px 12px 14px
       background: url('../images/music/border.svg') no-repeat center / 100% 100% $accent
       border-top-left-radius: 18px
@@ -49,18 +49,26 @@
          &__close
             &--desk
                display: none
+   &__box
+      display: flex
    &__manage
+      margin-top: 54px
+      margin-right: 10px
+      width: 40px
+      min-width: 40px
       display: flex
       align-items: center
       justify-content: center
+      flex-direction: column
+   &__list
+      width: calc(100% - 50px)
    &__btn
       width: 40px
       min-width: 40px
-      margin-left: 10px
-      &:first-child
-         margin-left: 0
+      margin-bottom: 50px
+      &:last-child
+         margin-bottom: 0
    &__content
-      margin-bottom: 20px
       display: flex
       align-items: center
    &__play
@@ -70,6 +78,7 @@
       margin-right: 6px
    &__info
       max-width: 300px
+      padding-right: 10px
       margin-right: auto
       font-size: 14px
       line-height: 150%
@@ -106,7 +115,7 @@
       &__inner
          width: 100%
          max-width: 520px
-         height: 300px
+         height: 718px
          padding: 23px 42px 12px 25px
          top: 102px
          right: -438px
@@ -138,4 +147,14 @@
          font-size: 18px
       &__item
          padding-left: 0
-         
+      &__manage
+         margin-top: 80px
+         margin-right: 34px
+      &__btn
+         margin-bottom: 66px
+      &__content
+         padding-right: 0
+      &__item
+         &::after
+            left: 0
+            right: 0

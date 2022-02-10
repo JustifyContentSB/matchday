@@ -14447,7 +14447,7 @@ picture {
 .music__inner {
   width: 100%;
   max-width: 370px;
-  height: 250px;
+  height: 485px;
   padding: 12px 23px 12px 14px;
   background: url(../images/music/border.svg) no-repeat center/100% 100% #43fe01;
   border-top-left-radius: 18px;
@@ -14480,7 +14480,16 @@ picture {
 .music__top-toggle__close--desk {
   display: none
 }
+.music__box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
 .music__manage {
+  margin-top: 54px;
+  margin-right: 10px;
+  width: 40px;
+  min-width: 40px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -14489,18 +14498,23 @@ picture {
   align-items: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.music__list {
+  width: calc(100% - 50px)
 }
 .music__btn {
   width: 40px;
   min-width: 40px;
-  margin-left: 10px
+  margin-bottom: 50px
 }
-.music__btn:first-child {
-  margin-left: 0
+.music__btn:last-child {
+  margin-bottom: 0
 }
 .music__content {
-  margin-bottom: 20px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -14516,6 +14530,7 @@ picture {
 }
 .music__info {
   max-width: 300px;
+  padding-right: 10px;
   margin-right: auto;
   font-size: 14px;
   line-height: 150%
@@ -14559,7 +14574,7 @@ picture {
   .music__inner {
     width: 100%;
     max-width: 520px;
-    height: 300px;
+    height: 718px;
     padding: 23px 42px 12px 25px;
     top: 102px;
     right: -438px;
@@ -14599,6 +14614,20 @@ picture {
   }
   .music__item {
     padding-left: 0
+  }
+  .music__manage {
+    margin-top: 80px;
+    margin-right: 34px
+  }
+  .music__btn {
+    margin-bottom: 66px
+  }
+  .music__content {
+    padding-right: 0
+  }
+  .music__item::after {
+    left: 0;
+    right: 0
   }
 }
 .profile {

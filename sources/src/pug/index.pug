@@ -680,22 +680,26 @@ block page
                     img.music__top-toggle__close.music__top-toggle__close--desk(src="images/music/toggle.svg" alt="показать музыку" width="40" height="40")
                 h2.music__title.title музыка
             .music__box
+                .music__manage
+                    button.music__btn.music__next#next-track
+                        img.music__btn-icon(src="images/music/next.svg" alt="следующий" width="40" height="40")
+                    button.music__btn.music__prev#prev-track
+                        img.music__btn-icon(src="images/music/prev.svg" alt="предыдущий" width="40" height="40")
+                    button.music__btn.music__next#pause2
+                        img.music__btn-icon(src="images/music/pause.svg" alt="следующий" width="40" height="40")
+                    button.music__btn.music__next#volume
+                        img.music__btn-icon(src="images/music/volume.svg" alt="следующий" width="40" height="40")
                 .music__list
                     .music__item
-                        .music__track
-                            .music__outer
-                                audio#track(src="https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3")
-                            .music__content
-                                button.music__play#play
-                                    img.music__btn-icon.music__btn-icon--play(src="images/music/play.svg" alt="плей" width="40" height="40")
-                                button.music__play#pause
-                                    img.music__btn-icon.music__btn-icon--pause(src="images/music/pause.svg" alt="плей" width="40" height="40")
-                                .music__info
-                                    h3.music__name#track-artist Убей меня
-                                    p.music__singer#track-title Rompasso, Ramil'
-                                p.music__duration#durationTime 00:42
-                        .music__manage
-                            button.music__btn.music__prev#prev-track
-                                img.music__btn-icon(src="images/music/prev.svg" alt="предыдущий" width="40" height="40")
-                            button.music__btn.music__next#next-track
-                                img.music__btn-icon(src="images/music/next.svg" alt="следующий" width="40" height="40")
+                        .music__outer
+                            audio#track(src="https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3")
+                        .music__content
+                            button.music__play#play
+                                img.music__btn-icon.music__btn-icon--play(src="images/music/play.svg" alt="плей" width="40" height="40")
+                            button.music__play#pause
+                                img.music__btn-icon.music__btn-icon--pause(src="images/music/pause.svg" alt="плей" width="40" height="40")
+                            .music__info
+                                h3.music__name#track-artist Убей меня
+                                p.music__singer#track-title Rompasso, Ramil'
+                            p.music__duration#durationTime 00:42
+                        
