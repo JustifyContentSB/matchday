@@ -23,12 +23,17 @@
       z-index: 10
    &__item
       width: 73px
+   &__name
+      transition: color .2s ease
    &__sign
       display: block
       font-weight: 600
       font-size: 14px
       line-height: 150%
       text-align: center
+      &:hover,
+      &:focus
+         color: $pink
    &__icon
       margin-bottom: 8px
       img

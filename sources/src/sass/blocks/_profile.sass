@@ -1,0 +1,153 @@
+.profile
+   width: 100%
+   max-width: 324px
+   padding: 60px 30px 45px
+   background: url('../images/profile/border-mob.svg') no-repeat center / 100% 100% $bodyBg
+   z-index: 1000
+   border-radius: 10px
+   overflow: hidden
+   position: relative
+   &__top
+      margin-bottom: 45px
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+   &__info
+      position: relative
+   &__close
+      position: absolute
+      z-index: 100
+      right: 10px
+      top: 10px
+      img
+         display: block
+   &__heart
+      position: absolute
+      &--1
+         left: 30%
+         top: -40px
+      &--2
+         bottom: 65px
+         left: 0
+      &--3
+         right: 0
+         top: 30%
+      &--4
+         right: -20px
+         top: 10%
+      &--5
+         right: -15px
+         top: 40%
+      &--6
+         right: -25px
+         top: 70%
+      &--7
+         bottom: 0
+         right: 10px
+   &__title
+      margin-bottom: 32px
+      font-size: 48px
+      line-height: 56px
+      color: #43FE01
+      font-family: $pixelcyr
+      font-weight: 400
+      text-align: center
+      text-shadow: #000 3px 0px 0, #000 0px 3px 2px, #000 0px -2px 2px, #000 -2px 0px 2px
+      span
+         &:nth-child(2)
+            color: #FFFF00
+         &:nth-child(3)
+            color: #FE75F0
+      &--desk
+         display: none
+   &__photo
+      width: 175px
+      margin-bottom: 26px
+   &__name
+      word-spacing: 9999px
+      font-weight: 600
+      font-size: 18px
+      line-height: 155%
+      text-align: center
+   &__broken
+      display: none
+   &__list
+      position: relative
+      z-index: 20
+   &__item
+      margin-bottom: 30px
+      &:last-child
+         margin-bottom: 0
+   &__question
+      font-size: 14px
+      line-height: 150%
+   &__answer
+      font-style: italic
+      font-weight: 600
+      font-size: 16px
+      line-height: 150%
+   &__cells
+      display: none
+
+@media screen and (min-width: 1280px)
+   .profile
+      max-width: 1048px
+      min-height: 645px
+      padding: 95px 81px 65px 100px
+      background: $bodyBg
+      display: flex
+      &__cells
+         display: block
+      &__close
+         right: 26px
+         top: 25px
+      &::after
+         content: ''
+         position: absolute
+         z-index: 20
+         left: 0
+         top: 0
+         right: 0
+         bottom: 0
+         background: url('../images/profile/border-desk.svg') no-repeat center / 100% 100%
+      &__top
+         width: 220px
+         margin-bottom: 0
+         margin-right: 58px
+         z-index: 30
+      &__info
+         padding: 5px 35px
+         position: relative
+         z-index: 30
+      &__heart
+         display: none
+      &__name
+         margin-bottom: 50px
+         font-size: 18px
+      &__broken
+         display: block
+      &__title
+         display: none
+         &--desk
+            display: block
+            position: absolute
+            right: 30px
+            bottom: 0
+      &__cells
+         max-width: none
+         position: absolute
+         left: -182px
+         top: -122px
+      &__question
+         font-size: 16px
+         line-height: 150%
+      &__answer
+         font-size: 18px
+      &__list
+         display: grid
+         grid-template-columns: 1fr 1fr
+         justify-content: space-between
+         grid-gap: 37px 90px
+      &__item
+         margin-bottom: 0

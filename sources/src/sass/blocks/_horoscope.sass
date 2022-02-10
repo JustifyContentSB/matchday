@@ -1,0 +1,48 @@
+.horoscope
+   width: 100%
+   max-width: 328px
+   min-height: 510px
+   padding: 60px 32px 30px
+   background: url('../images/zodiac/horoscope-mob.png') no-repeat center / 100% 100%
+   position: relative
+   &__close
+      position: absolute
+      right: 10px
+      top: 10px
+   &__icon
+      margin: 0 auto
+      display: block
+      margin-bottom: 38px
+   &__title
+      margin-bottom: 8px
+      font-weight: 700
+      font-size: 24px
+      line-height: 150%
+      text-align: center
+   &__text
+      font-size: 14px
+      line-height: 150%
+      text-align: center
+      font-weight: 600
+
+@media screen and (min-width: 1280px)
+   .horoscope
+      max-width: 948px
+      min-height: 529px
+      padding: 60px 100px 87px
+      background: url('../images/zodiac/horoscope-desk.png') no-repeat center / 100% 100%
+      &__close
+         top: 20px
+         right: 32px
+      &__icon
+         width: 182px
+         margin-bottom: 50px
+      &__title
+         font-size: 36px
+         line-height: 150%
+      &__text
+         width: 100%
+         max-width: 636px
+         margin: 0 auto
+         font-size: 16px
+         line-height: 150%

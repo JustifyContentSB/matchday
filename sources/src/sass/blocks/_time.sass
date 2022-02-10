@@ -1,0 +1,36 @@
+.time
+   width: 100%
+   max-width: 328px
+   min-height: 230px
+   padding: 62px 32px 50px
+   background: url('../images/time/time-mob.png') no-repeat center / 100% 100%
+   position: relative
+   &__close
+      position: absolute
+      right: 10px
+      top: 10px
+   &__text
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 16px
+      line-height: 150%
+      text-align: center
+   &__clock
+      font-size: 64px
+      line-height: 80%
+      font-family: $opirus
+      color: $accent
+      text-align: center
+
+@media screen and (min-width: 1280px)
+   .time
+      min-width: 597px
+      min-height: 272px
+      padding: 70px 32px 75px
+      background: url('../images/time/time-desk.png') no-repeat center / 100% 100%
+      &__close
+         top: 23px
+         right: 23px
+      &__text
+         margin-bottom: 22px
+         font-size: 18px

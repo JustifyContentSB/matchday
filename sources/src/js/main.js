@@ -9,6 +9,7 @@ $(document).ready(function () {
     giftWomanSwiper()
     navOpen()
     navClose()
+    music()
 });
 
 // Your functions here
@@ -45,6 +46,7 @@ function memeSwiper() {
         spaceBetween: 26,
         loop: false,
         navigation: {
+            prevEl: ".meme__prev",
             nextEl: ".meme__next"
         },
         breakpoints: {
@@ -97,10 +99,9 @@ function navClose() {
     });
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
     // конечная дата
-    const deadline = new Date('2022-02-09 18:00:00');
+    const deadline = new Date('2032-02-12 18:00:00');
     // id таймера
     let timerId = null;
     // склонение числительных
@@ -132,3 +133,109 @@ document.addEventListener('DOMContentLoaded', function () {
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
 });
+
+function music() {
+    $('.music__toggle').on('click', function (e) {
+        e.preventDefault();
+        $('.music__inner').addClass('music__inner--active');
+    });
+
+    $('.music__top-toggle').on('click', function (e) {
+        e.preventDefault();
+        $('.music__inner').toggleClass('music__inner--active');
+    })
+}
+
+const track = document.getElementById("track");
+const trackArtist = document.getElementById("track-artist");
+const trackTitle = document.getElementById("track-title");
+const durationTime = document.getElementById("durationTime");
+
+let play = document.getElementById("play");
+let pause = document.getElementById("pause");
+let next = document.getElementById("next-track");
+let prev = document.getElementById("prev-track");
+trackIndex = 0;
+
+tracks = [
+    "https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3",
+    "https://res.cloudinary.com/cbanlawi/video/upload/v1614144520/Justin_Bieber-Yummy_vercib.mp3",
+
+    "https://res.cloudinary.com/cbanlawi/video/upload/v1614186705/Loud_Luxury_ft._Brando_-_Body_fm7cdr.mp3"
+];
+
+trackArtists = ["Harry Styles", "Justin Bieber", "Loud Luxury ft. Brando"];
+trackTitles = ["Watermelon Sugar", "Yummy", "Body"];
+
+let playing = true;
+
+function pausePlay() {
+    if (playing) {
+        play.style.display = "none";
+        pause.style.display = "block";
+
+        track.play();
+        playing = false;
+    } else {
+        pause.style.display = "none";
+        play.style.display = "block";
+
+        track.pause();
+        playing = true;
+    }
+}
+
+play.addEventListener("click", pausePlay);
+pause.addEventListener("click", pausePlay);
+
+track.addEventListener("ended", nextTrack);
+
+function nextTrack() {
+    trackIndex++;
+    if (trackIndex > tracks.length - 1) {
+        trackIndex = 0;
+    }
+
+    track.src = tracks[trackIndex];
+
+    trackArtist.textContent = trackArtists[trackIndex];
+    trackTitle.textContent = trackTitles[trackIndex];
+
+    playing = true;
+    pausePlay();
+}
+
+next.addEventListener("click", nextTrack);
+
+function prevTrack() {
+    trackIndex--;
+    if (trackIndex < 0) {
+        trackIndex = tracks.length - 1;
+    }
+
+    track.src = tracks[trackIndex];
+
+    trackArtist.textContent = trackArtists[trackIndex];
+    trackTitle.textContent = trackTitles[trackIndex];
+
+    playing = true;
+    pausePlay();
+}
+
+prev.addEventListener("click", prevTrack);
+
+function progressValue() {
+
+    durationTime.textContent = formatTime(track.duration);
+}
+
+setInterval(progressValue, 500);
+
+function formatTime(sec) {
+    let minutes = Math.floor(sec / 60);
+    let seconds = Math.floor(sec - minutes * 60);
+    if (seconds < 10) {
+        seconds = `0${seconds}`;
+    }
+    return `${minutes}:${seconds}`;
+}

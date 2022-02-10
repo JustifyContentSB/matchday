@@ -1,0 +1,32 @@
+.video
+   width: calc(100% - 32px)
+   max-width: 1158px
+   border: 3px solid #000
+   &__inner
+      border: 3px solid #fff
+   &__top
+      min-height: 30px
+      padding-right: 6px
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      border-bottom: 3px solid #fff
+   &__btn
+      width: 15px
+      height: 15px
+      margin-left: 6px
+      img
+         display: block
+         width: 100%
+
+@media screen and (min-width: 1280px)
+   .video
+      border-width: 4px
+      &__inner
+         border-width: 4px
+      &__top
+         min-height: 35px
+         border-width: 4px
+      &__btn
+         width: 23px
+         height: 23px

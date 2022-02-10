@@ -1,0 +1,74 @@
+.plan
+   width: 100%
+   max-width: 328px
+   min-height: 511px
+   padding: 26px 32px 52px
+   background: url('../images/zodiac/horoscope-mob.png') no-repeat center / 100% 100%
+   position: relative
+   &__close
+      position: absolute
+      top: 10px
+      right: 10px
+   &__top
+      margin-bottom: 23px
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__icon
+      margin-bottom: 10px
+      img
+         width: 100%
+   &__title
+      font-size: 24px
+      span
+         color: $accent
+   &__list
+      padding: 0
+      padding-left: 10px
+      margin: 0
+      margin-bottom: 27px
+      font-size: 14px
+      line-height: 150%
+   &__text
+      font-size: 12px
+      line-height: 150%
+
+@media screen and (min-width: 1280px)
+   .plan
+      max-width: 948px
+      min-height: 529px
+      padding: 43px 100px 54px
+      background: url('../images/zodiac/horoscope-desk.png') no-repeat center / 100% 100%
+      &__close
+         top: 20px
+         right: 24px
+      &__icon
+         width: 67px
+         margin-bottom: 27px
+      &__title
+         font-size: 36px
+         margin-bottom: 14px
+      &__top
+         max-width: 550px
+         margin: 0 auto
+      &__info
+         max-width: 550px
+         margin: 0 auto
+      &__list
+         margin-bottom: 58px
+         font-size: 16px
+         line-height: 192%
+      &__text
+         padding-left: 10px
+         font-size: 14px
+         line-height: 150%
+         position: relative
+         &::before
+            content: ''
+            position: absolute
+            left: -4px
+            top: 0
+            width: 9px
+            height: 9px
+            background: url('../images/icons/x.svg') no-repeat center / contain
+         

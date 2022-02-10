@@ -183,8 +183,11 @@
             display: block
             position: absolute
             z-index: 10
+            &--2
+               top: 250px
+               right: 310px
             &--3
-               left: 10%
+               left: 30%
                top: -30px
          &-smile
             display: block
@@ -192,7 +195,50 @@
             z-index: 10
             &--2
                top: 200px
-               left: 0
+               left: -50px
             &--3
-               right: 7%
+               right: 6%
                top: -30px
+      &__text
+         font-size: 18px
+
+@media screen and (min-width: 1600px)
+   .love
+      &__hearts
+         width: 1372px
+
+@media screen and (min-width: 1900px)
+   .love
+      &__hearts
+         width: 1612px
+      &__heart
+         &--1
+            top: 6px
+            left: 190px
+         &--3
+            right: 720px
+         &--4
+            top: 184px
+         &--5
+            left: 667px
+         &--6
+            left: 429px
+         &--11
+            right: 184px
+         &-smile
+            &--1
+               left: 252px
+               top: 71px
+            &--2
+               left: 905px
+               top: 240px
+         &-pink
+            &--2
+               top: 135px
+
+@media screen and (min-width: 2100px)
+   .love
+      &__heart
+         &-smile
+            &--3
+               right: calc(100% - 1920px)
