@@ -8,8 +8,8 @@ $(document).ready(function () {
   giftManSwiper();
   giftWomanSwiper();
   navOpen();
-  navClose();
   music();
+  menuScroll();
 }); // Your functions here
 
 function matchSwiper() {
@@ -84,17 +84,33 @@ function giftWomanSwiper() {
 function navOpen() {
   $('.header__burger').on('click', function (e) {
     e.preventDefault();
-    $('.header__nav').addClass('header__nav--active');
-    $('body').addClass('no-scroll');
+    $(this).toggleClass('header__burger--active');
+    $('.header').toggleClass('header--active');
+    $('.header__nav').toggleClass('header__nav--active');
+    return false;
   });
 }
 
-function navClose() {
-  $('.header__nav-close').on('click', function (e) {
-    e.preventDefault();
-    $('.header__nav').removeClass('header__nav--active');
-    $('body').removeClass('no-scroll');
-  });
+function menuScroll() {
+  if ($(window).width() < 1280) {
+    $(".header__anchor").click(function () {
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top - $('.header__inner').height() - 140;
+      jQuery("html:not(:animated),body:not(:animated)").animate({
+        scrollTop: destination
+      }, 800);
+      return false;
+    });
+  } else {
+    $(".header__anchor").click(function () {
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top - $('.header__inner').height() - 40;
+      jQuery("html:not(:animated),body:not(:animated)").animate({
+        scrollTop: destination
+      }, 800);
+      return false;
+    });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -235,4 +251,15 @@ function formatTime(sec) {
   }
 
   return "".concat(minutes, ":").concat(seconds);
+}
+
+var controller = new ScrollMagic.Controller();
+var hearts = document.querySelectorAll(".match__person-heart__img");
+
+for (var i = 0; i < hearts.length; i++) {
+  new ScrollMagic.Scene({
+    triggerElement: hearts[i],
+    offset: 50,
+    triggerHook: 0.9
+  }).setClassToggle(hearts[i], "together").addTo(controller);
 }

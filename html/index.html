@@ -25,16 +25,16 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__inner container"><a class="header__burger" href="#"><img src="images/icons/burger.svg" alt="открыть меню" width="28" height="24"></a>
-          <nav class="header__nav"><a class="header__nav-close" href="#"><img src="images/icons/close.svg" alt="закрыть меню"></a>
+        <div class="header__inner container"><a class="header__burger" href="#"><img class="header__burger-open" src="images/icons/burger.svg" alt="открыть меню" width="28" height="24"><img class="header__burger-close" src="images/icons/close.svg" alt="закрыть меню"></a>
+          <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item header__item--active"><a class="header__link" href="#">главная</a></li>
-              <li class="header__item"><a class="header__link" href="#">MATCH TIME</a></li>
-              <li class="header__item"><a class="header__link" href="#">ЛЕКЦИИ</a></li>
-              <li class="header__item"><a class="header__link" href="#">ЧАТ</a></li>
-              <li class="header__item"><a class="header__link" href="#">МЕМЫ</a></li>
-              <li class="header__item"><a class="header__link" href="#">ГОРОСКОП</a></li>
-              <li class="header__item"><a class="header__link" href="#">что подарить?</a></li>
+              <li class="header__item"><a class="header__link header__anchor" href="#match">MATCH TIME</a></li>
+              <li class="header__item"><a class="header__link header__anchor" href="#lecture">ЛЕКЦИИ</a></li>
+              <li class="header__item"><a class="header__link header__anchor" href="#chat">ЧАТ</a></li>
+              <li class="header__item"><a class="header__link header__anchor" href="#meme">МЕМЫ</a></li>
+              <li class="header__item"><a class="header__link header__anchor" href="#zodiac">ГОРОСКОП</a></li>
+              <li class="header__item"><a class="header__link header__anchor" href="#gift">что подарить?</a></li>
             </ul>
           </nav>
         </div>
@@ -56,7 +56,7 @@
             </div>
           </div>
         </section>
-        <section class="match">
+        <section class="match" id="match">
           <div class="left match__left"><img class="left__cells" src="images/all/left.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
           <div class="right match__right"><img class="right__cells" src="images/all/right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
           <div class="match__inner container">
@@ -94,7 +94,8 @@
                             <p class="match__name">Александр Иванов</p>
                           </div><a class="match__read" href="#"><span>читать анкету</span></a>
                         </div>
-                        <div class="match__person"><img class="match__person-heart match__person-heart--mob" src="images/match/broken-mob.png" alt="сердечко" width="56"><img class="match__person-heart match__person-heart--desk" src="images/match/broken-desk.png" alt="сердечко" width="127" height="106">
+                        <div class="match__person">
+                          <div class="match__person-heart"><img class="match__person-heart__img match__person-heart--left" src="images/match/heart-left.png" alt="сердечко" width="35"><img class="match__person-heart__img match__person-heart--right" src="images/match/heart-right.png" alt="сердечко" width="35"></div>
                           <div class="match__info">
                             <div class="match__photo"><img src="images/match/person-2.png" alt="фото"></div>
                             <p class="match__name">Мария Петрова</p>
@@ -126,7 +127,7 @@
             </div>
           </div>
         </section>
-        <section class="lecture">
+        <section class="lecture" id="lecture">
           <div class="lecture__inner">
             <header class="lecture__header container">
               <h2 class="lecture__title title-big">лекции</h2>
@@ -189,7 +190,7 @@
             </div>
           </div>
         </section>
-        <section class="chat">
+        <section class="chat" id="chat">
           <div class="left chat__left"><img class="left__cells" src="images/all/left.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
           <div class="right chat__right"><img class="right__cells" src="images/all/chat-right.svg" alt="клетки"><img class="right__heart right__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart right__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="right__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="right__heart-yellow" src="images/all/heart-pink.gif" alt="сердечко"><img class="right__smile-pink" src="images/all/right-smile-pink.svg" alt="смайл" width="101" height="98"><img class="right__smile-red" src="images/all/right-smile-red.svg" alt="смайл" width="101" height="98"></div>
           <div class="chat__inner container">
@@ -209,7 +210,7 @@
             </div>
           </div>
         </section>
-        <section class="meme">
+        <section class="meme" id="meme">
           <div class="left meme__left"><img class="left__cells" src="images/all/left-meme.svg" alt="клетки"><img class="left__heart left__heart-1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-3" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-4" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-5" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-6" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart left__heart-7" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="left__heart-green" src="images/all/heart-green.gif" alt="сердечко"><img class="left__heart-pink" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__heart-red" src="images/all/heart-pink.gif" alt="сердечко"><img class="left__smile-green" src="images/all/left-smile-green.svg" alt="смайл" width="101" height="98"><img class="left__smile-yellow" src="images/all/left-smile-yellow.svg" alt="смайл" width="101" height="98"></div>
           <div class="meme__inner">
             <div class="meme__top container"><img class="meme__top-heart meme__top-heart__1" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="meme__top-heart meme__top-heart__2" src="images/all/heart.gif" alt="сердечко" width="50" height="50"><img class="meme__top-heart__pink" src="images/all/heart-pink.gif" alt="сердечко" width="68">

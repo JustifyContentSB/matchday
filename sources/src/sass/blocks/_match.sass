@@ -51,12 +51,25 @@
       justify-content: space-between
       position: relative
       &-heart
+         display: flex
          position: absolute
          top: -26px
          left: 50%
          transform: translateX(-50%)
          &--desk
             display: none
+         &__img
+            transition: left .2s ease, right .2s ease
+         &--left
+            position: relative
+            left: 0
+            &.together
+               left: 7px
+         &--right
+            position: relative
+            right: 0
+            &.together
+               right: 7px
       &:last-child
          margin-bottom: 0
    &__info
@@ -149,11 +162,19 @@
          &-heart
             top: 50%
             transform: translateY(-50%)
-            left: -77px
+            left: -83px
             &--mob
                display: none
             &--desk
                display: block
+            &--left
+               width: 68px
+               &.together
+                  left: 12px
+            &--right
+               width: 73px
+               &.together
+                  right: 12px
       &__info
          margin-bottom: 18px
          flex-direction: column
